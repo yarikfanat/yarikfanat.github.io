@@ -1,0 +1,243 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+html, body {
+  	background: rgb(108,108,108);
+}
+.full_wrap {
+	position: relative;
+	background: white;
+	top:240px;
+	width: 90%;
+  	left:5%;	
+}
+.header {
+	z-index:1;
+	position: fixed;
+	background: rgb(108,108,108);
+	width: 100%;
+	height: 240px;
+}
+.block_video_btn {
+	position: absolute;
+	width: 28%;
+	height: 200px;
+	left: 36%;
+	top: 20px;
+	border: 2px solid silver;
+}
+.video_button {
+	position: absolute;
+	width: 14%;
+	height: 150px;
+	left: 43%;
+	top: 30px;
+	border-radius: 5px;
+	box-shadow: 0 0 6px;
+	background-size: 50% 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(img/video.png);
+}
+.video_button:hover {
+	box-shadow: 0 0 6px rgba(229,229,229,0.5);
+	cursor: pointer;
+	background-size: 70% 70%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(img/video.png);
+}
+.photo_dumbells1 {
+	position: absolute;
+	width: 35%;
+	height: 240px;
+	left: 0px;
+	top: 0px;
+	background-size: 100% 100%;
+	background-image: url(img/dumbells1.jpg);
+}
+.photo_dumbells2 {
+	position: absolute;
+	width: 35%;
+	height: 240px;
+	right: 0px;
+	top: 0px;
+	background-size: 100% 100%;
+	background-image: url(img/dumbells2.jpg);
+}
+.content {
+	position: relative;
+	width: 50%;
+	padding: 10px;
+	float: left;
+}
+.block_main_ex {
+	float: right;
+	width: 48%;
+}
+.button_list_ex:hover {
+	border: 2px solid rgb(100,100,255);
+}
+.button_list_ex {
+	float: left;
+	width: 6%;
+	text-align: center;
+	margin-right: 1%;
+	margin-top: 10px;
+}
+.exercise_name {
+	float: right;
+	width: 93%;
+	padding: 20px;
+	border-style: solid;
+	border-width: 2px 0px 2px 2px;
+	border-color: rgb(255,255,0);
+	background-color: rgb(255,255,185);
+	margin-top: 10px;
+}
+.list_exercise {
+	float: right;
+	width: 40%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+	overflow: hidden;
+}
+.list_exercise li {
+	position: relative;
+  	width: 100%;
+  	padding: 5px 20px;
+  	border-style: solid;
+  	border-width: 2px 0px 2px 2px;
+  	border-color: rgb(98,98,0);
+  	background-color: rgb(136,136,0);
+  	margin-top: 10px;
+  	left: 100%;
+}
+.animation_lists_hide {
+	-webkit-animation-name: exercises_hide;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear;    
+    -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
+    animation-name: exercises_hide;
+    animation-duration: 0.5s; 
+    animation-timing-function: linear;   
+    animation-fill-mode: both;
+}
+.animation_lists_show {
+	-webkit-animation-name: exercises_show;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear;    
+    -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
+    animation-name: exercises_show;
+    animation-duration: 0.5s; 
+    animation-timing-function: linear;   
+    animation-fill-mode: both;
+}
+.list_exercise li:nth-child(1) {
+    animation-delay: 0.0s;
+    -webkit-animation-delay: 0.0s;
+}
+.list_exercise li:nth-child(2) {
+    animation-delay: 0.05s;
+    -webkit-animation-delay: 0.05s;
+}
+.list_exercise li:nth-child(3) {
+    animation-delay: 0.1s;
+    -webkit-animation-delay:0.1s;
+}
+.list_exercise li:nth-child(4) {
+    animation-delay: 0.15s;
+    -webkit-animation-delay: 0.15s;
+}
+.list_exercise li:nth-child(5) {
+    animation-delay: 0.2s;
+   -webkit-animation-delay: 0.2s;
+}
+.list_exercise li:nth-child(6) {
+    animation-delay: 0.25s;
+   -webkit-animation-delay:0.25s;
+}
+@-webkit-keyframes exercises_show {
+    from {left: 100%;}
+    to {left: 0px;}
+}
+
+@keyframes exercises_show {
+    from {left: 100%;}
+    to {left: 0px;}
+}
+@-webkit-keyframes exercises_hide {
+    from {left: 0px;}
+    to {left: 100%;}
+}
+
+@keyframes exercises_hide {
+    from {left: 0px;}
+    to {left: 100%;}
+}
+.equipment {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: rgb(209,209,209);	
+}
+.photo_equip {
+	width: 100%;
+	height: 100%;
+	border: 2px solid #666;
+}
+.passe-partout {
+	float: left;
+    padding: 40px; 
+    background: #f0f0f0; 
+    border: 2px solid #800000; 
+    display: inline-block; 
+    margin: 1%; 
+    width: 50%;
+    height: 95%;
+} 
+.passe-partout:hover {
+	cursor: pointer;
+	border-color: blue;
+}
+@media only screen and (max-width: 600px) {
+	.content  {
+		width: 100%;
+		text-align: center;
+	}
+	.photo_dumbells1,.photo_dumbells2,.header {
+		height: 120px;
+	}
+	.full_wrap {
+		top: 120px;
+	}
+	.block_video_btn {
+		top: 10px;
+		height: 100px;
+	}
+	.video_button {
+		height: 90px;
+		top: 15px;
+		width: 26%;
+		left: 37%;
+		background-size: 80% 80%;
+	}
+	.video_button:hover {
+		background-size: 90% 90%;
+	}
+	.passe-partout {
+		width: 95%;
+	}
+	.equipment {
+		height: auto;
+	}
+	.list_exercise {
+		width: 90%;
+	}
+	.block_main_ex {
+		width: 100%;
+	}
+}

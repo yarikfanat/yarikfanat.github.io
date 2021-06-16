@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trainer</title>
+	<link rel="stylesheet" type="text/css" href="tooltips.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="trainer.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+</head>
+<body onload="Init()">
+	
+		<div class="header">
+			<div class="photo_dumbells1"></div>
+			<div class="photo_dumbells2"></div>
+			<div class="block_video_btn"></div>
+			<div class="video_button"></div>
+		</div>
+		<div class="full_wrap">
+			<div class="content" id="content1">
+				<div class="equipment">
+					<div class="passe-partout">
+						<img src="" class="photo_equip" id="photo_equip0">
+					</div>
+					<div class="block_main_ex">
+						<button class="button_list_ex" id="btn_list0" onclick="ExerciseLists(this,'list_ex0')"><b>+</b></button>
+						<div class="exercise_name" id="ex0"></div>
+					</div>
+					<!--
+					<ul class="list_exercise" id="list_ex0">
+						<p>Альтернативные упражнения</p>
+						<li>fgggg hhyyyjh yjjjyu</li>
+						<li>dfff fffff fffffff</li>
+						<li>ffffff fffgffgfgf</li>
+						<li>dddddd ffffff</li>
+						<li>rfrgrgrg rgrg</li>
+						<li>frefrefr rgrgr</li>
+					</ul> -->
+				</div>
+			</div>
+			<div class="content" id="content2">
+				<div class="equipment">
+					<div class="passe-partout">
+						<img src="" class="photo_equip" id="photo_equip1">
+					</div>
+					<div class="block_main_ex">
+						<button class="button_list_ex" id="btn_list1" onclick="ExerciseLists(this,'list_ex1')"><b>+</b></button>
+						<div class="exercise_name" id="ex1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="content3">
+				<div class="equipment">
+					<div class="passe-partout">
+						<img src="" class="photo_equip" id="photo_equip2">
+					</div>
+					<div class="block_main_ex">
+						<button class="button_list_ex" id="btn_list2" onclick="ExerciseLists(this,'list_ex2')"><b>+</b></button>
+						<div class="exercise_name" id="ex2"></div>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="content4">
+				<div class="equipment">
+					<div class="passe-partout">
+						<img src="" class="photo_equip" id="photo_equip3">
+					</div>
+					<div class="block_main_ex">
+						<button class="button_list_ex" id="btn_list3" onclick="ExerciseLists(this,'list_ex3')"><b>+</b></button>
+						<div class="exercise_name" id="ex3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="content5">
+				<div class="equipment">
+					<div class="passe-partout">
+						<img src="" class="photo_equip" id="photo_equip4">
+					</div>
+					<div class="block_main_ex">
+						<button class="button_list_ex" id="btn_list4" onclick="ExerciseLists(this,'list_ex4')"><b>+</b></button>
+						<div class="exercise_name" id="ex4"></div>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="content6">
+				<div class="equipment">
+					<div class="passe-partout">
+						<img src="" class="photo_equip" id="photo_equip5">
+					</div>
+					<div class="block_main_ex">
+						<button class="button_list_ex" id="btn_list5" onclick="ExerciseLists(this,'list_ex5')"><b>+</b></button>
+						<div class="exercise_name" id="ex5"></div>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<script type="text/javascript" src="js/float_tooltip.js"></script> 
+		<script type="text/javascript" src="js/trainer.js"></script>
+</body>
+</html>
