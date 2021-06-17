@@ -15,7 +15,6 @@ function Init() {
 
 function InitElements () {
 	var element_photo,element_content,list_exersices,element_ex;
-	var group_ex;
 
 	list_exersices='';
 	tool_tip = new FloatToolTip("rect");
@@ -27,30 +26,16 @@ function InitElements () {
 			element_photo.src = complex.photo_equip[i][0];		
 			element_ex=document.getElementById ('ex'+i);
 			element_ex.textContent = complex.exercise_name[i][0];
-			group_ex = complex.exercise_name[i];
-			if (group_ex.length > 1) {
 
-				list_exersices='<ul class="list_exercise" id="list_ex'+i+'"><p>Альтернативные упражнения</p>';
-				for (var j = 1; j < group_ex.length; j++) {
-					list_exersices += '<li>'+group_ex[j]+'</li>';
-				}
-				list_exersices += '</ul>';
-			}
+			list_exersices = CreateListEx (i);
 			element_content=document.getElementById ('content'+(i+1));
 			element_content.children[0].insertAdjacentHTML ('beforeend',list_exersices);
 		}		
 		else
 		{
 			//Create Elements
-			group_ex = complex.exercise_name[i];
-			if (group_ex.length > 1) {
-
-				list_exersices='<ul class="list_exercise" id="list_ex'+i+'"><p>Альтернативные упражнения</p>';
-				for (var j = 1; j < group_ex.length; j++) {
-					list_exersices += '<li>'+group_ex[j]+'</li>';
-				}
-				list_exersices += '</ul>';
-			}
+			list_exersices = CreateListEx (i);
+			
 			element_content=document.getElementById ('content'+i);
 			element_content.insertAdjacentHTML ('afterend','<div class="content" id="content'+(i+1)+'"><div class="equipment"><div class="passe-partout"><img src="'+complex.photo_equip[i][0]+
 												'" class="photo_equip" id="photo_equip'+i+'"></div><div class="block_main_ex">'+
@@ -62,6 +47,22 @@ function InitElements () {
 		tool_tip.set_AnimationOut('photo_equip'+i,"zoomOutRight");
 	}
 }
+
+function CreateListEx (i) {
+	var list_ex;
+	var group_ex = complex.exercise_name[i];
+	
+	if (group_ex.length > 1) {
+
+		list_ex='<ul class="list_exercise" id="list_ex'+i+'"><p><span style="font-family: Arial;color: rgb(0,85,125)">Альтернативные упражнения</span></p>';
+		for (var j = 1; j < group_ex.length; j++) {
+			list_ex += '<li>'+group_ex[j]+'</li>';
+		}
+		list_ex += '</ul>';
+	}
+	return list_ex;
+}
+
 function ExerciseLists (but,id_list) {
 	var list_ex;
 
