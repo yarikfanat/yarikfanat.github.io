@@ -75,30 +75,50 @@ html, body {
 .block_main_ex {
 	float: right;
 	width: 48%;
-}
-.button_list_ex:hover {
-	border: 2px solid rgb(100,100,255);
+	display: flex;
+  	flex-wrap: nowrap;
 }
 .button_list_ex {
-	float: left;
-	width: 6%;
-	text-align: center;
+	width: 15%;
+	margin: 1%;
+	margin-top: 7px;
+	margin-left: 1%;
 	margin-right: 1%;
-	margin-top: 10px;
+	margin-bottom: 1%;
+	text-align: center;
+	font-size: 25px;
+	border-radius: 10px;
+	cursor: pointer;
+	color: rgb(0,85,125);
+	font-weight: bold;
+	border: 2px solid rgb(166,226,255);
+	background-color: rgba(215,242,255,0.5);
 }
 .exercise_name {
-	float: right;
-	width: 93%;
-	padding: 20px;
+	cursor: pointer;
+	width: 82%;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-top: 7px;
+	margin-left: 1%;
+	margin-bottom: 1%;
+	font-family: Arial;
+	color: rgb(0,85,125);
+	padding: 5px;
 	border-style: solid;
 	border-width: 2px 0px 2px 2px;
-	border-color: rgb(255,255,0);
-	background-color: rgb(255,255,185);
-	margin-top: 10px;
+	border-color: rgb(166,226,255);
+	background-color: rgba(215,242,255,0.5);
+}
+.button_list_ex:hover,.exercise_name:hover {
+	border: 2px solid rgb(100,100,255);
+}
+.list_exercise li:hover {
+	border: 2px solid rgb(100,100,255);
 }
 .list_exercise {
 	float: right;
-	width: 40%;
+	width: 48%;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -108,12 +128,17 @@ html, body {
 .list_exercise li {
 	position: relative;
   	width: 100%;
-  	padding: 5px 20px;
+  	font-family: Arial;
+  	padding: 5px;
+  	color: rgb(0,85,125);
+  	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
   	border-style: solid;
   	border-width: 2px 0px 2px 2px;
-  	border-color: rgb(98,98,0);
-  	background-color: rgb(136,136,0);
+  	border-color: rgb(166,226,255);
+  	background-color: rgba(215,242,255,0.5);
   	margin-top: 10px;
+  	cursor: pointer;
   	left: 100%;
 }
 .animation_lists_hide {
@@ -203,6 +228,12 @@ html, body {
 	cursor: pointer;
 	border-color: blue;
 }
+@media only screen and (max-width: 1100px) {
+	.content  {
+		width: 100%;
+		text-align: center;
+	}
+}
 @media only screen and (max-width: 600px) {
 	.content  {
 		width: 100%;
@@ -235,9 +266,9 @@ html, body {
 		height: auto;
 	}
 	.list_exercise {
-		width: 90%;
+		width: 100%;
 	}
-	.block_main_ex {
+	.block_main_ex ,.block_main_ex1 {
 		width: 100%;
 	}
 }
