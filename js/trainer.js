@@ -94,7 +94,7 @@ function ShowPhotoEx (element)
 	var index;
 	var src_photo,current_photo;
 
-	if (element.tagName.toLowerCase()=='div')
+	if (element.id.indexOf('ex')!=-1)
 	{//главное упр-е
 		index = Number (element.id.slice (2));
 		src_photo = complex.photo_equip[index][0];		
