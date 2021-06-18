@@ -40,7 +40,7 @@ function InitElements () {
 			element_content.insertAdjacentHTML ('afterend','<div class="content" id="content'+(i+1)+'"><div class="equipment"><div class="passe-partout"><img src="'+complex.photo_equip[i][0]+
 												'" class="photo_equip" id="photo_equip'+i+'"></div><div class="block_main_ex">'+
 												'<button class="button_list_ex" id="btn_list'+i+'" onclick="ExerciseLists(this,'+"'list_ex"+i+"'"+')"><b>+</b></button>'+
-												'<div class="exercise_name" id="ex'+i+'">'+complex.exercise_name[i][0]+'</div></div>'+list_exersices+'</div></div>');
+												'<div class="exercise_name" onclick="ShowPhotoEx(this)" id="ex'+i+'">'+complex.exercise_name[i][0]+'</div></div>'+list_exersices+'</div></div>');
 		}
 		tool_tip.addToElement ('photo_equip'+i,"Для просмотра видео<br> нажмите значок видеокамеры");
 		tool_tip.set_AnimationIn('photo_equip'+i,"rubberBand");
@@ -56,7 +56,7 @@ function CreateListEx (i) {
 
 		list_ex='<ul class="list_exercise" id="list_ex'+i+'"><p><span style="font-family: Arial;color: rgb(0,85,125)">Альтернативные упражнения</span></p>';
 		for (var j = 1; j < group_ex.length; j++) {
-			list_ex += '<li>'+group_ex[j]+'</li>';
+			list_ex += '<li onclick="ShowPhotoEx(this)">'+group_ex[j]+'</li>';
 		}
 		list_ex += '</ul>';
 	}
@@ -87,4 +87,33 @@ function ExerciseLists (but,id_list) {
 	{
 		setTimeout (function() {list_ex.style.display='none';},700);	
 	}
+}
+
+function ShowPhotoEx (element)
+{
+	var index;
+	var src_photo,current_photo;
+
+	if (element.tagName.toLowerCase()=='div')
+	{//главное упр-е
+		index = Number (element.id.slice (2));
+		src_photo = complex.photo_equip[index][0];		
+	}else
+	{//список альтернативных упр-й
+		var exercise_name = element.textContent;
+		var list = document.getElementById (element.parentElement.id);
+		var items = list.querySelectorAll ('li');
+		index = Number (list.id.slice (7));
+
+		for (var i = 0; i < items.length; i++) {
+			if (items[i].textContent==exercise_name)
+			{
+				src_photo = complex.photo_equip[index][i+1];
+				break;
+			}
+		}
+	}
+	current_photo=document.getElementById ('photo_equip'+index);
+	if (current_photo.src != src_photo)
+		current_photo.src = src_photo;
 }
