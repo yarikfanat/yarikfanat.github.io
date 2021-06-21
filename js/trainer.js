@@ -1,4 +1,5 @@
 var complex,tool_tip;
+var player_hide=true;
 
 function Init() {
   var xhttp = new XMLHttpRequest();
@@ -86,6 +87,21 @@ function ExerciseLists (but,id_list) {
 	if (but.textContent=='+')
 	{
 		setTimeout (function() {list_ex.style.display='none';},700);	
+	}
+}
+
+function PlayVideo () {
+	var player = document.getElementById ('player');
+	player.src = "https://www.youtube.com/embed/T2RfezgCt1U";
+	if (player_hide)
+	{
+		player.classList.remove ('animation_player_hide');
+		player.classList.add ('animation_player_show');
+		player_hide = false;
+	}else{
+		player.classList.remove ('animation_player_show');
+		player.classList.add ('animation_player_hide');
+		player_hide = true;
 	}
 }
 
