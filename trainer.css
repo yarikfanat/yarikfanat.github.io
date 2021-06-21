@@ -14,7 +14,13 @@ html, body {
   	z-index: 1;	
 }
 .header {
-	z-index:3;
+	z-index:2;
+	position: fixed;
+	width: 100%;
+	height: 240px;
+}
+.header_back {
+	z-index: 4;
 	position: fixed;
 	background: rgb(108,108,108);
 	width: 100%;
@@ -27,6 +33,7 @@ html, body {
 	left: 36%;
 	top: 20px;
 	border: 2px solid silver;
+	z-index: 5;
 }
 .video_button {
 	position: absolute;
@@ -40,6 +47,7 @@ html, body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url(img/video.png);
+	z-index: 5;
 }
 .video_button:hover {
 	box-shadow: 0 0 6px rgba(229,229,229,0.5);
@@ -57,6 +65,7 @@ html, body {
 	top: 0px;
 	background-size: 100% 100%;
 	background-image: url(img/dumbells1.jpg);
+	z-index: 5;
 }
 .photo_dumbells2 {
 	position: absolute;
@@ -66,6 +75,7 @@ html, body {
 	top: 0px;
 	background-size: 100% 100%;
 	background-image: url(img/dumbells2.jpg);
+	z-index: 5;
 }
 .content {
 	position: relative;
@@ -150,7 +160,7 @@ html, body {
 /*	top: 240px;*/
 	left: 50%;
 	margin-left: -433px;
-	z-index: 2;
+	z-index: 3;
 /*	display: none;*/
 }
 .animation_player_show {
