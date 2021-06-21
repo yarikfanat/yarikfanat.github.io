@@ -292,7 +292,7 @@ html, body {
 		width: 100%;
 		text-align: center;
 	}
-	.photo_dumbells1,.photo_dumbells2,.header {
+	.photo_dumbells1,.photo_dumbells2,.header,.header_back {
 		height: 120px;
 	}
 	.full_wrap {
