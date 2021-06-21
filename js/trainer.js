@@ -1,5 +1,6 @@
 var complex,tool_tip;
 var player_hide=true;
+var src_video='';
 
 function Init() {
   var xhttp = new XMLHttpRequest();
@@ -91,8 +92,15 @@ function ExerciseLists (but,id_list) {
 }
 
 function PlayVideo () {
+	
+	if (src_video == '')
+	{
+		alert ('видеоролик еще не добавлен');
+		return;
+	}
+
 	var player = document.getElementById ('player');
-	player.src = "https://www.youtube.com/embed/T2RfezgCt1U";
+	player.src = src_video;
 	if (player_hide)
 	{
 		player.classList.remove ('animation_player_hide');
@@ -115,7 +123,8 @@ function ShowPhotoEx (element)
 	if (element.id.indexOf('ex')!=-1)
 	{//главное упр-е
 		index = Number (element.id.slice (2));
-		src_photo = complex.photo_equip[index][0];		
+		src_photo = complex.photo_equip[index][0];	
+		src_video = complex.src_video[index][0];	
 	}else
 	{//список альтернативных упр-й
 		var exercise_name = element.textContent;
@@ -127,6 +136,7 @@ function ShowPhotoEx (element)
 			if (items[i].textContent==exercise_name)
 			{
 				src_photo = complex.photo_equip[index][i+1];
+				src_video = complex.src_video[index][i+1];
 				break;
 			}
 		}
