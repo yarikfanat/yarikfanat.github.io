@@ -10,10 +10,11 @@ html, body {
 	background: white;
 	top:240px;
 	width: 90%;
-  	left:5%;	
+  	left:5%;
+  	z-index: 1;	
 }
 .header {
-	z-index:1;
+	z-index:3;
 	position: fixed;
 	background: rgb(108,108,108);
 	width: 100%;
@@ -141,22 +142,39 @@ html, body {
   	cursor: pointer;
   	left: 100%;
 }
+.video_player {
+	position: absolute;
+	width: 867px;
+	height: 488px;
+	top: -248px;
+	left: 50%;
+	margin-left: -433px;
+	z-index: 2;
+}
+.animation_player_show {
+	-webkit-animation-name: player_show; 
+	animation-name: player_show;
+	animation-delay: 0.0s;
+    -webkit-animation-delay: 0.0s;
+}
+.animation_player_hide {
+	-webkit-animation-name: player_hide; 
+	animation-name: player_hide;
+	animation-delay: 0.0s;
+    -webkit-animation-delay: 0.0s;
+}
 .animation_lists_hide {
 	-webkit-animation-name: exercises_hide;  /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 0.5s;  /* Safari 4.0 - 8.0 */
-    -webkit-animation-timing-function: linear;    
-    -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
-    animation-name: exercises_hide;
-    animation-duration: 0.5s; 
-    animation-timing-function: linear;   
-    animation-fill-mode: both;
+	 animation-name: exercises_hide;
 }
 .animation_lists_show {
-	-webkit-animation-name: exercises_show;  /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: exercises_show;
+	 animation-name: exercises_show;
+}
+.animation_lists_hide,.animation_lists_show,.animation_player_show,.animation_player_hide {
     -webkit-animation-duration: 0.5s;  /* Safari 4.0 - 8.0 */
     -webkit-animation-timing-function: linear;    
     -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
-    animation-name: exercises_show;
     animation-duration: 0.5s; 
     animation-timing-function: linear;   
     animation-fill-mode: both;
@@ -185,6 +203,23 @@ html, body {
     animation-delay: 0.25s;
    -webkit-animation-delay:0.25s;
 }
+@-webkit-keyframes player_show {
+    from {top: -248px;}
+    to {top: 240px;}
+}
+@keyframes player_show {
+    from {top: -248px;}
+    to {top: 240px;}
+}
+@-webkit-keyframes player_hide {
+    from {top: 240px;}
+    to {top: -248px;}
+}
+@keyframes player_hide {
+    from {top: 240px;}
+    to {top: -248px;}
+}
+
 @-webkit-keyframes exercises_show {
     from {left: 100%;}
     to {left: 0px;}
@@ -235,6 +270,12 @@ html, body {
 	}
 }
 @media only screen and (max-width: 600px) {
+	.video_player {
+		width: 100%;
+		margin: 0;
+		left: 0px;
+		height: auto;
+	}
 	.content  {
 		width: 100%;
 		text-align: center;
