@@ -95,14 +95,14 @@ function PlayVideo () {
 	player.src = "https://www.youtube.com/embed/T2RfezgCt1U";
 	if (player_hide)
 	{
-	//	player.classList.remove ('animation_player_hide');
-	//	player.classList.add ('animation_player_show');
-		player.style.display = 'block';
+		player.classList.remove ('animation_player_hide');
+		player.classList.add ('animation_player_show');
+	//	player.style.display = 'block';
 		player_hide = false;
 	}else{
-		//player.classList.remove ('animation_player_show');
-		//player.classList.add ('animation_player_hide');
-		player.style.display = 'none';
+		player.classList.remove ('animation_player_show');
+		player.classList.add ('animation_player_hide');
+	//	player.style.display = 'none';
 		player_hide = true;
 	}
 }
