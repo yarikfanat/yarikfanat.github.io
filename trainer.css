@@ -146,10 +146,12 @@ html, body {
 	position: absolute;
 	width: 867px;
 	height: 488px;
-	top: -248px;
+/*	top: -248px;*/
+	top: 240px;
 	left: 50%;
 	margin-left: -433px;
 	z-index: 2;
+	display: none;
 }
 .animation_player_show {
 	-webkit-animation-name: player_show; 
