@@ -1,0 +1,191 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+html, body {
+  	background: rgb(108,108,108);
+ 	
+}
+.wrap_logon {
+	display: none;
+	width: 100%;
+	
+}
+.bgstart {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.name_head {
+  	position: relative;
+	top: 20px;
+	left: 25%;
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.name_head1 {
+	position: relative;
+	width: 70%;
+	text-align: center;
+	float: left;
+	left: -100%;
+}
+.name_head2 {
+	position: relative;
+	width: 30%;
+	left: 100%;
+	text-align: left;
+	float: right;
+}
+.name_head div {
+  	
+  	padding: 0;
+ 	margin: 0;
+  	font-size: 50px;
+  	font-weight: bold;
+  	font-family: Arial;
+  	font-style: italic;
+  	color: rgb(81,81,255);
+}
+.animation_name_head1 {
+	-webkit-animation-name: anime_name_first; 
+	animation-name: anime_name_first;
+}
+.animation_name_head2 {
+	-webkit-animation-name: anime_name_second; 
+	animation-name: anime_name_second;
+}
+.animation_name_head1,.animation_name_head2 {
+	
+	animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 0.5s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear;    
+    -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
+    animation-duration: 0.5s; 
+    animation-timing-function: linear;   
+    animation-fill-mode: both;
+}
+@keyframes anime_name_first {
+    from {left: -100%;}
+    to {left: 0px;}
+}
+@-webkit-keyframes anime_name_first {
+    from {left: -100%;}
+    to {left: 0px;}
+}
+@keyframes anime_name_second {
+    from {left: 100%;}
+    to {left: 0px;}
+}
+@-webkit-keyframes anime_name_second {
+    from {left: 100%;}
+    to {left: 0px;}
+}
+.frame {
+	position: relative;	
+	display: block;
+	width: 35%;
+	height: auto;
+/*	margin: 200px auto;*/
+	margin: 50px auto;
+    border: 2px solid blue;
+}
+.my_logo {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 15px;
+}
+.my_photo {
+	width: 100%;
+	height: auto;
+}
+.input_block {
+	position: absolute;
+	width: 50%;
+	top: 35%;
+	left: 25%;
+}
+p,span {
+	color: rgb(202,202,202);
+	font-family: Arial;
+}
+span {
+	margin-left: 10px;
+}
+input {
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(0,162,232);
+	border-radius: 10px;
+}
+input[type='text'], input[type='password']{
+	width: 100%;
+	height: 25px;	
+}
+input:hover {
+	border: 2px solid rgb(100,100,255);
+}
+input[type='checkbox'] {
+	margin-top: 20px;
+	width: 25px;
+	height: 25px;
+}
+input[type='button'] {
+	margin-top: 20px;
+	width: 50%;
+	height: 25px;
+	font-family: Arial;
+	color: rgb(133,133,133);
+	font-weight: bolder;
+	background: rgb(210,241,255); 
+}
+@media only screen and (max-width: 1400px) {
+	.frame {
+		width: 50%;
+		margin: 10% auto;
+	}
+	.name_head {
+		width: 70%;
+		left: 15%;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.frame {
+		width: 70%;
+	}
+	.name_head {
+		width: 100%;
+		left: 0px;
+	}
+	.name_head div {
+		width: 100%;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.frame {
+		width: 80%;
+	}
+	.input_block {
+		top: 25%;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.frame {
+		width: 100%;
+		margin: 30% auto;
+	}
+	.name_head div {
+		font-size: 40px;
+	}
+	
+}

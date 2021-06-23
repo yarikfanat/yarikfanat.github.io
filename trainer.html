@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Trainer</title>
+	<title>Виртуальный тренер</title>
 	<link rel="stylesheet" type="text/css" href="tooltips.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
-	<link rel="stylesheet" type="text/css" href="trainer.css">
+	<link rel="stylesheet" type="text/css" href="start.css">
+	<link rel="stylesheet" type="text/css" href="trainer.css">	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 </head>
-<body onload="Init()">
-	
-		<div class="header">
+<body onload="checkCookie()">
+		<div class="wrap_logon" id="logon"> 
+			<img src="img/dumbells1.jpg" class="bgstart">
+			<div class="name_head">
+				<div class="name_head1" id="head_name1">Виртуальный</div>
+				<div class="name_head2" id="head_name2">тренер</div>
+			</div>
+			<div class="frame" id="frm0">
+				<img src="img/DSCN0170.JPG" width="4606" height="3456" class="my_photo">
+				<div class="my_logo">Copyright Бойчук Ярослав</div>
+				<div class="input_block">
+					<p><b>Введите имя пользователя:</b></p>
+					<input type="text" id="usr" value="">
+					<p><b>Введите пароль:</b></p>
+					<input type="password" id="pass" value="">
+					<input type="button" value="Подтвердить" onclick="FormHandler()">
+					<p><input type="checkbox" checked id="chk"><span><b>Сохранить данные</b></span></p>
+				</div>
+			</div> 
+			
+		</div>
+		
+		<div class="header" id="head">
 			<iframe src="" class="video_player" id="player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen>
 			
 			</iframe>
@@ -19,7 +40,7 @@
 			<div class="block_video_btn"></div>
 			<div class="video_button" onclick="PlayVideo()"></div>
 		</div>
-		<div class="full_wrap">
+		<div class="full_wrap" id="wrap">
 			<div class="content" id="content1">
 				<div class="equipment">
 					<div class="passe-partout">
@@ -87,8 +108,9 @@
 				</div>
 			</div>
 			<div style="clear:both"></div>
-		</div>
+		</div>		
 		<script type="text/javascript" src="js/float_tooltip.js"></script> 
 		<script type="text/javascript" src="js/trainer.js"></script>
+		<script type="text/javascript" src="js/start.js"></script>
 </body>
 </html>
