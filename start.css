@@ -191,5 +191,8 @@ input[type='button'] {
 	.name_head div {
 		font-size: 40px;
 	}
-	
+	.animation_name_head1,.animation_name_head2 {
+		animation-duration: 2s; 
+		-webkit-animation-duration: 2s;
+	}
 }
