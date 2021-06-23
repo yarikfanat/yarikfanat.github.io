@@ -1,4 +1,4 @@
-var complex,tool_tip;
+var conf_json,complex,tool_tip;
 var player_hide=true;
 var src_video='';
 
@@ -11,7 +11,7 @@ function Init() {
       	InitElements ();
     }
   };
-  xhttp.open("GET", "json/trainer.json", true);
+  xhttp.open("GET", conf_json, true);
   xhttp.send();
 }
 
