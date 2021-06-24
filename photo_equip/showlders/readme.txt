@@ -1,0 +1,1 @@
+showlders equip
