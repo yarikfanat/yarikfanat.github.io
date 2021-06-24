@@ -51,12 +51,13 @@ function InitElements () {
 }
 
 function CreateListEx (i) {
-	var list_ex;
+	var list_ex,str_name;
 	var group_ex = complex.exercise_name[i];
-	
+
+	(complex.superset[i]==true)? str_name="Суперсет комплекс": str_name="Альтернативные упражнения";
 	if (group_ex.length > 1) {
 
-		list_ex='<ul class="list_exercise" id="list_ex'+i+'"><p><span style="font-family: Arial;color: rgb(0,85,125)">Альтернативные упражнения</span></p>';
+		list_ex='<ul class="list_exercise" id="list_ex'+i+'"><p><span style="font-family: Arial;color: rgb(0,85,125)">'+str_name+'</span></p>';
 		for (var j = 1; j < group_ex.length; j++) {
 			list_ex += '<li onclick="ShowPhotoEx(this)">'+group_ex[j]+'</li>';
 		}

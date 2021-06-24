@@ -25,8 +25,6 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-  document.cookie = "password=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
   user_exist=false;
   user_name=getCookie("username");
   password=getCookie("password");
