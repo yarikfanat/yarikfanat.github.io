@@ -44,7 +44,8 @@ function InitElements () {
 												'<button class="button_list_ex" id="btn_list'+i+'" onclick="ExerciseLists(this,'+"'list_ex"+i+"'"+')"><b>+</b></button>'+
 												'<div class="exercise_name" onclick="ShowPhotoEx(this)" id="ex'+i+'">'+complex.exercise_name[i][0]+'</div></div>'+list_exersices+'</div></div>');
 		}
-		tool_tip.addToElement ('photo_equip'+i,"Для просмотра видео<br> нажмите значок видеокамеры");
+		tool_tip.addToElement ('photo_equip'+i,'<span style="font-family: Arial;color: rgb(0,85,125)">Для просмотра видео<br> нажмите значок видеокамеры</span>');
+		tool_tip.set_BgColor ('photo_equip'+i,"rgba(255,255,185,0.8)");
 		tool_tip.set_AnimationIn('photo_equip'+i,"rubberBand");
 		tool_tip.set_AnimationOut('photo_equip'+i,"zoomOutRight");
 	}
@@ -54,10 +55,11 @@ function CreateListEx (i) {
 	var list_ex,str_name;
 	var group_ex = complex.exercise_name[i];
 
-	(complex.superset[i]==true)? str_name="Суперсет комплекс": str_name="Альтернативные упражнения";
+	(complex.superset[i]==true)? str_name='Суперсет комплекс</span><img src="img/two-way.png" width="32" height="32"></p>': 
+	                             str_name='Альтернативные упражнения</span></p>';
 	if (group_ex.length > 1) {
 
-		list_ex='<ul class="list_exercise" id="list_ex'+i+'"><p><span style="font-family: Arial;color: rgb(0,85,125)">'+str_name+'</span></p>';
+		list_ex='<ul class="list_exercise" id="list_ex'+i+'"><p><span style="font-family: Arial;color: rgb(0,85,125);margin-right:40px">'+str_name;
 		for (var j = 1; j < group_ex.length; j++) {
 			list_ex += '<li onclick="ShowPhotoEx(this)">'+group_ex[j]+'</li>';
 		}
