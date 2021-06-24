@@ -1,5 +1,5 @@
 {
-	"usr_name":["yarikfanat","dasha"],
-	"usr_pass":["leppard72","andrejko"],
-	"usr_conf":["json/trainer.json","json/dasha_andrejko.json"]
+	"usr_name":["yarikfanat","dasha","yar_grynyshyn"],
+	"usr_pass":["leppard72","andrejko","stone"],
+	"usr_conf":["json/trainer.json","json/dasha_andrejko.json","json/yar_grynyshyn.json"]
 }
