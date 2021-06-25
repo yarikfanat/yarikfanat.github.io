@@ -103,9 +103,9 @@ function PlayVideo () {
 	}
 
 	var player = document.getElementById ('player');
-	player.src = src_video;
 	if (player_hide)
 	{
+		player.src = src_video;
 		player.classList.remove ('animation_player_hide');
 		player.classList.add ('animation_player_show');
 	//	player.style.display = 'block';
@@ -114,7 +114,8 @@ function PlayVideo () {
 		player.classList.remove ('animation_player_show');
 		player.classList.add ('animation_player_hide');
 	//	player.style.display = 'none';
-		player_hide = true;
+		setTimeout (()=> {player.src = '';},500);			
+		player_hide = true;				
 	}
 }
 
