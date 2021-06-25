@@ -13,11 +13,12 @@
             	 ["https://www.youtube.com/embed/ykGsGlXkEVg","https://www.youtube.com/embed/HmKtdQTPJi4"],
             	 ["https://www.youtube.com/embed/wVNFyUNcwgU","video/vertical_richag_tyaga.mp4"],
             	 ["https://www.youtube.com/embed/F2BZDFZEIQQ","video/obratna_extension.mp4"],
-            	 ["https://www.youtube.com/embed/1hMM2VDeyFg","https://www.youtube.com/embed/MLRvcj4dYeQ","https://www.youtube.com/embed/4wNi4keR_JE","https://www.youtube.com/embed/0NrOMts6pzc"]],
+            	 ["video/press_lezha.mp4","https://www.youtube.com/embed/MLRvcj4dYeQ","https://www.youtube.com/embed/4wNi4keR_JE","https://www.youtube.com/embed/0NrOMts6pzc"]],
 	"superset":[true,true,true,true,false],
 	"circle":[false,false,false,false,false],
 	"details":[[{"rounds":4,"reps":20},{"rounds":4,"reps":20}],
 			   [{"rounds":4,"reps":20},{"rounds":4,"reps":20}],
+			   [{"rounds":4,"reps":25},{"rounds":4,"reps":20}],
 			   [{"rounds":4,"reps":25},{"rounds":4,"reps":25}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15},{"rounds":4,"reps":15},{"rounds":4,"reps":15}]
 		 	  ]
