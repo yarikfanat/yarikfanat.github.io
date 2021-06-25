@@ -161,8 +161,8 @@
 .animation_player_show {
 	-webkit-animation-name: player_show; 
 	animation-name: player_show;
-	animation-delay: 0.0s;
-    -webkit-animation-delay: 0.0s;
+	animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
 }
 .animation_player_hide {
 	-webkit-animation-name: player_hide; 
@@ -257,6 +257,7 @@
 	border: 2px solid #666;
 }
 .passe-partout {
+	position: relative;
 	float: left;
     padding: 40px; 
     background: #f0f0f0; 
@@ -266,6 +267,20 @@
     width: 50%;
     height: 95%;
 } 
+.info {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	left: 0px;
+	top: 100%;
+	font-weight: bold;
+	margin-top: -35px;
+	text-align: center;
+	font-size: 30px;
+	font-style: italic;
+	font-family: Arial;
+	color: blue;
+}
 .passe-partout:hover {
 	cursor: pointer;
 	border-color: blue;
