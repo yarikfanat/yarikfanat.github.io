@@ -16,7 +16,7 @@ function Init() {
 }
 
 function InitElements () {
-	var element_photo,element_content,list_exersices,element_ex;
+	var element_photo,element_content,list_exersices,element_ex,info,round_rep;
 
 	list_exersices='';
 	tool_tip = new FloatToolTip("rect");
@@ -28,6 +28,9 @@ function InitElements () {
 			element_photo.src = complex.photo_equip[i][0];		
 			element_ex=document.getElementById ('ex'+i);
 			element_ex.textContent = complex.exercise_name[i][0];
+			info = complex.details[i][0];
+			round_rep = info.rounds+'x'+info.reps;
+			document.getElementById ('info'+i).textContent = round_rep;
 
 			list_exersices = CreateListEx (i);
 			element_content=document.getElementById ('content'+(i+1));
@@ -37,10 +40,12 @@ function InitElements () {
 		{
 			//Create Elements
 			list_exersices = CreateListEx (i);
+			info = complex.details[i][0];
+			round_rep = info.rounds+'x'+info.reps;
 			
 			element_content=document.getElementById ('content'+i);
 			element_content.insertAdjacentHTML ('afterend','<div class="content" id="content'+(i+1)+'"><div class="equipment"><div class="passe-partout"><img src="'+complex.photo_equip[i][0]+
-												'" class="photo_equip" id="photo_equip'+i+'"></div><div class="block_main_ex">'+
+												'" class="photo_equip" id="photo_equip'+i+'"><div class="info" id="info'+i+'">'+round_rep+'</div></div><div class="block_main_ex">'+
 												'<button class="button_list_ex" id="btn_list'+i+'" onclick="ExerciseLists(this,'+"'list_ex"+i+"'"+')"><b>+</b></button>'+
 												'<div class="exercise_name" onclick="ShowPhotoEx(this)" id="ex'+i+'">'+complex.exercise_name[i][0]+'</div></div>'+list_exersices+'</div></div>');
 		}
@@ -122,13 +127,15 @@ function PlayVideo () {
 function ShowPhotoEx (element)
 {
 	var index;
+	var info,round_rep;
 	var src_photo,current_photo;
 
 	if (element.id.indexOf('ex')!=-1)
 	{//главное упр-е
 		index = Number (element.id.slice (2));
 		src_photo = complex.photo_equip[index][0];	
-		src_video = complex.src_video[index][0];	
+		src_video = complex.src_video[index][0];
+		info = complex.details[index][0];	
 	}else
 	{//список альтернативных упр-й
 		var exercise_name = element.textContent;
@@ -141,11 +148,14 @@ function ShowPhotoEx (element)
 			{
 				src_photo = complex.photo_equip[index][i+1];
 				src_video = complex.src_video[index][i+1];
+				info = complex.details[index][i+1];
 				break;
 			}
 		}
 	}
+	round_rep = info.rounds+'x'+info.reps;
 	current_photo=document.getElementById ('photo_equip'+index);
 	if (current_photo.src != src_photo)
 		current_photo.src = src_photo;
+	document.getElementById ('info'+index).textContent = round_rep;
 }
