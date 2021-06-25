@@ -8,5 +8,10 @@
 	"src_video":[["https://www.youtube.com/embed/xv7gMobOzmU","https://www.youtube.com/embed/wiFDIIe1Z1M","https://www.youtube.com/embed/i-MMX509tdo","https://www.youtube.com/embed/U6oN6IcKKI4"],
             	 ["https://www.youtube.com/embed/bfsKSHhqVS4","https://www.youtube.com/embed/HmKtdQTPJi4","https://www.youtube.com/embed/wVNFyUNcwgU"],
              	 ["https://www.youtube.com/embed/1hMM2VDeyFg","https://www.youtube.com/embed/MLRvcj4dYeQ","https://www.youtube.com/embed/4wNi4keR_JE","https://www.youtube.com/embed/0NrOMts6pzc"]],
-	"superset":[false,false,false]
+	"superset":[false,false,false],
+	"circle":[false,false,false],
+	"details":[[{"rounds":4,"reps":15},{"rounds":4,"reps":15},{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
+			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
+			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15},{"rounds":4,"reps":15},{"rounds":4,"reps":15}]
+		 	  ]
 }
