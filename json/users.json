@@ -1,5 +1,5 @@
 {
-	"usr_name":["yarikfanat","dasha","yar_grynyshyn","sveta"],
-	"usr_pass":["leppard0872","andrejko","stone","andrejko"],
-	"usr_conf":["json/trainer.json","json/dasha_andrejko.json","json/yar_grynyshyn.json","json/sveta_andrejko.json"]
+	"usr_name":["yarikfanat","dasha","yar_grynyshyn","sveta","arkadiy"],
+	"usr_pass":["leppard0872","andrejko","stone","andrejko","garda36"],
+	"usr_conf":["json/trainer.json","json/dasha_andrejko.json","json/yar_grynyshyn.json","json/sveta_andrejko.json","json/garda.json"]
 }
