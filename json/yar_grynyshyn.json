@@ -1,27 +1,27 @@
 {
 	"photo_equip":[
-				   ["photo_equip/showlders/showlders_smit.jpg","photo_equip/showlders/shoulders_sitdown.jpg"],
-				   ["photo_equip/showlders/IMG_20201030_162311.jpg","photo_equip/showlders/hunter-labradas-5-moves-to-massive-shoulders-labrada-graphic-3b.jpg"],
-				   ["photo_equip/showlders/shoulders_stendup.jpg","photo_equip/showlders/IMG_20201028_085140.jpg"],
-				   ["photo_equip/legs/IMG_20201026_174911.jpg","photo_equip/legs/zhim-nogami-foto.jpg"],
-				   ["photo_equip/legs/prised_smit.jpg","photo_equip/legs/prisedaniya-so-shtangoy.jpg"],
-				   ["photo_equip/abdominal/press_na_skame.jpg","photo_equip/abdominal/IMG_20201028_090039.jpg"]
+				   ["photo_equip/back/IMG_20201028_085252.jpg","photo_equip/back/IMG_20201028_085252.jpg"],
+				   ["photo_equip/back/IMG_20201028_085824.jpg","photo_equip/back/IMG_20201028_085824.jpg"],
+				   ["photo_equip/back/IMG_20201026_173358.jpg","photo_equip/back/goriz_richag_tyga.jpg"],
+				   ["photo_equip/back/IMG_20201030_162539.jpg","photo_equip/back/pull_back_barbell.jpg"],
+				   ["photo_equip/back/IMG_20201026_173157.jpg","photo_equip/back/IMG_20201028_085813.jpg"],
+				   ["photo_equip/abdominal/press_turnik.jpg","photo_equip/abdominal/IMG_20201028_085135.jpg"]
 				  ],
 	"exercise_name":[
-					 ["Жим штанги в станке Смитта из-за головы сидя (с каждой стороны по 10-12кг(22-26 фунта))", "Жим гантелей 12-14кг(26-30 фунтов) вверх сидя на стуле"],
-					 ["Жим вверх сидя в тренажере для плеч (50-60 фунтов)","Жим штанги в станке Смитта перед собой сидя (с каждой стороны по 10-12кг(22-26 фунта))"],
-					 ["Отведения гантелей по 7-8кг в стороны стоя","Дельта-машина отведения (50 фунтов)"],
-					 ["Жим ногами в платформе сидя(60-70 кг или 135 фунтов) с каждой стороны","Жим ногами вверх в платформе(140 фунтов)"],
-					 ["Приседания со штангой в станке Смитта( по 10-12 кг(22-26 фунта) с каждой стороны)","Приседания со свободным весом (штанга)по 10-12 кг(22-26 фунта) с каждой стороны"],
-					 ["Подьемы ног лежа на спине","Скручивания на пресс на наклонной скамье"]
+					 ["Подтягивание в гравитроне широким хватом (противовес 130-140 фунтов)","Подтягивание в гравитроне параллельным хватом (противовес 130-140 фунтов)"],
+					 ["Вертикальная рычажная тяга широким хватом (вес 80-90 фунтов)","Вертикальная рычажная тяга параллельным хватом (вес 80-90 фунтов)"],
+					 ["Гоизонтальная рычажная тяга широким хватом (вес по 25кг(55 фунтов на каждую сторону))","Гоизонтальная рычажная тяга средним хватом (вес по 25кг(55 фунтов на каждую сторону))"],
+					 ["Тяга Т-грифа (вес 20кг(45 фунтов))","Тяга штанги средним хватом в наклоне (вес по 10-15кг (22-35фунтов) на каждую сторону)"],
+					 ["Гиперэкстензия с отягощением","Обратная гиперэкстензия в тренажере"],
+					 ["Подьемы ног в висе","Скручивания в тренажере для пресса"]
 				  	],
 	"src_video":[
-				 ["https://www.youtube.com/embed/b6yuHKoc0JY","https://www.youtube.com/embed/0JCIaYefb14"],
-				 ["https://www.youtube.com/embed/IMxbzZ-hEXw","https://www.youtube.com/embed/uFTH_rqLQNI"],
-				 ["https://www.youtube.com/embed/AeTPDjMmIm4","https://www.youtube.com/embed/Vx4N54KAOJc"],
-				 ["https://www.youtube.com/embed/xv7gMobOzmU","https://www.youtube.com/embed/wiFDIIe1Z1M"],
-				 ["https://www.youtube.com/embed/OBhf2yqCdpc","https://www.youtube.com/embed/GotRb2Ob7MA"],
-				 ["https://www.youtube.com/embed/0NrOMts6pzc","https://www.youtube.com/embed/2G_ynbbfi04"]
+				 ["https://www.youtube.com/embed/gkrrGaeukY4","https://www.youtube.com/embed/BOUrymgJk4s"],
+				 ["https://www.youtube.com/embed/ZLr25N9buQ8","https://www.youtube.com/embed/JxstfbStOMA"],
+				 ["https://www.youtube.com/embed/Bx8QSth84lI","https://www.youtube.com/embed/ipldDlIVcm4"],
+				 ["https://www.youtube.com/embed/3Yjr0ulB_YI","https://www.youtube.com/embed/mdSuEs6YQ48"],
+				 ["https://www.youtube.com/embed/ykGsGlXkEVg","https://www.youtube.com/embed/zTKVfUW0EIo"],
+				 ["https://www.youtube.com/embed/MLRvcj4dYeQ","https://www.youtube.com/embed/4wNi4keR_JE"]
 				],
 	"superset":[false,false,false,false,false,false],
 	"circle":[false,false,false,false,false,false,false],
