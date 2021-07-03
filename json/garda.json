@@ -1,27 +1,27 @@
 {
 	"photo_equip":[
-				   ["photo_equip/chest/IMG_20201030_162454.jpg","photo_equip/chest/zhim-gantelej-lezha-na-skame-pod-uglom-35.jpg"],
-				   ["photo_equip/chest/Smith-Machine-Bench-Press.jpg","photo_equip/chest/zhim_gantel_na_gorizont.jpg"],
-				   ["photo_equip/chest/svedenie-ruk-na-grud-v-trenazhere-babochka.jpg","photo_equip/chest/razvedenie-ruk-lezha.jpg"],
-				   ["photo_equip/chest/IMG_20201028_085252.jpg","photo_equip/chest/IMG_20201030_162503.jpg"],
-				   ["photo_equip/chest/pulover.jpg","photo_equip/chest/IMG_20201030_162545.jpg"],
-				   ["photo_equip/abdominal/planka.png","photo_equip/abdominal/press_turnik.jpg"]
+				   ["photo_equip/showlders/showlders_smit.jpg","photo_equip/showlders/shoulders_sitdown.jpg"],
+				   ["photo_equip/showlders/IMG_20201030_162311.jpg","photo_equip/showlders/hunter-labradas-5-moves-to-massive-shoulders-labrada-graphic-3b.jpg"],
+				   ["photo_equip/showlders/shoulders_stendup.jpg","photo_equip/showlders/IMG_20201028_085140.jpg"],
+				   ["photo_equip/legs/IMG_20201026_174911.jpg","photo_equip/legs/zhim-nogami-foto.jpg"],
+				   ["photo_equip/legs/prised_smit.jpg","photo_equip/legs/prisedaniya-so-shtangoy.jpg"],
+				   ["photo_equip/abdominal/press_na_skame.jpg","photo_equip/abdominal/IMG_20201028_090039.jpg"]
 				  ],
 	"exercise_name":[
-					 ["Жим лежа под наклоном в тренажере (широкий хват)вес по 5кг(10 фунтов) с каждой стороны","жим гантелей по 12-14кг лежа на скамье под углом 35градусов"],
-					 ["Жим штанги лежа на горизонтальной скамье в станке Смитта (вес по 10-12кг(20-25 фунтов) с каждой стороны)","жим гантелей по 12-14кг лежа на горизонтальной скамье"],
-					 ["Грудь-машина - сведения рук(вес 60-70 фунтов)","Разведение гантелей 12 кг(25 фунтов) лежа на горизонтальной скамье"],
-					 ["Отжимания на брусьях в гравитроне(противовес 170-160 фунтов)","Жим в трицепс-машине"],
-					 ["Пуловер с гантелью 20 кг(40 фунтов) лежа на горизонтальной скамье","Пуловер сидя в пуловер-машине"],
-					 ["Планка горизонтальная на локтях","Подьемы ног в висе на турнике"]
+					 ["Жим штанги в станке Смитта из-за головы сидя (с каждой стороны по 10-12кг(22-26 фунта))", "Жим гантелей 12-14кг(26-30 фунтов) вверх сидя на стуле"],
+					 ["Жим вверх сидя в тренажере для плеч (50-60 фунтов)","Жим штанги в станке Смитта перед собой сидя (с каждой стороны по 10-12кг(22-26 фунта))"],
+					 ["Отведения гантелей по 7-8кг в стороны стоя","Дельта-машина отведения (50 фунтов)"],
+					 ["Жим ногами в платформе сидя(60-70 кг или 135 фунтов) с каждой стороны","Жим ногами вверх в платформе(140 фунтов)"],
+					 ["Приседания со штангой в станке Смитта( по 10-12 кг(22-26 фунта) с каждой стороны)","Приседания со свободным весом (штанга)по 10-12 кг(22-26 фунта) с каждой стороны"],
+					 ["Подьемы ног лежа на спине","Скручивания на пресс на наклонной скамье"]
 				  	],
 	"src_video":[
-				 ["https://www.youtube.com/embed/tzo69SUAm04","https://www.youtube.com/embed/MaxvcRh8ZII"],
-				 ["https://www.youtube.com/embed/R0RyxO58XuM","https://www.youtube.com/embed/mXdyLcQ_VZU"],
-				 ["https://www.youtube.com/embed/fMcFLCGKh04","https://www.youtube.com/embed/QaJcczm4uZU"],
-				 ["https://www.youtube.com/embed/pSlfgn0nW4w","https://www.youtube.com/embed/gPE0-KLc5zQ"],
-				 ["https://www.youtube.com/embed/UTurBQ0YAu8","https://www.youtube.com/embed/5XjZ4D2tMrc"],
-				 ["https://www.youtube.com/embed/54rGQNDT8ZA","https://www.youtube.com/embed/MLRvcj4dYeQ"]
+				 ["https://www.youtube.com/embed/b6yuHKoc0JY","https://www.youtube.com/embed/0JCIaYefb14"],
+				 ["https://www.youtube.com/embed/IMxbzZ-hEXw","https://www.youtube.com/embed/uFTH_rqLQNI"],
+				 ["https://www.youtube.com/embed/AeTPDjMmIm4","https://www.youtube.com/embed/Vx4N54KAOJc"],
+				 ["https://www.youtube.com/embed/xv7gMobOzmU","https://www.youtube.com/embed/wiFDIIe1Z1M"],
+				 ["https://www.youtube.com/embed/OBhf2yqCdpc","https://www.youtube.com/embed/GotRb2Ob7MA"],
+				 ["https://www.youtube.com/embed/0NrOMts6pzc","https://www.youtube.com/embed/2G_ynbbfi04"]
 				],
 	"superset":[false,false,false,false,false,true],
 	"circle":[false,false,false,false,false,false,false],
