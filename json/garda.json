@@ -23,13 +23,13 @@
 				 ["https://www.youtube.com/embed/OBhf2yqCdpc","https://www.youtube.com/embed/GotRb2Ob7MA"],
 				 ["https://www.youtube.com/embed/0NrOMts6pzc","https://www.youtube.com/embed/2G_ynbbfi04"]
 				],
-	"superset":[false,false,false,false,false,true],
+	"superset":[false,false,false,false,false,false],
 	"circle":[false,false,false,false,false,false,false],
 	"details":[[{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
-			   [{"rounds":4,"reps":"1минута"},{"rounds":4,"reps":15}]
+			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}]
 		 	  ]
 }
