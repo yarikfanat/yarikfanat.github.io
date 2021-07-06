@@ -1,35 +1,39 @@
 {
 	"photo_equip":[
-				   ["photo_equip/back/IMG_20201028_085252.jpg","photo_equip/back/IMG_20201028_085252.jpg"],
-				   ["photo_equip/back/IMG_20201028_085824.jpg","photo_equip/back/IMG_20201028_085824.jpg"],
-				   ["photo_equip/back/IMG_20201026_173358.jpg","photo_equip/back/goriz_richag_tyga.jpg"],
-				   ["photo_equip/back/IMG_20201030_162539.jpg","photo_equip/back/pull_back_barbell.jpg"],
-				   ["photo_equip/back/IMG_20201026_173157.jpg","photo_equip/back/IMG_20201028_085813.jpg"],
-				   ["photo_equip/abdominal/press_turnik.jpg","photo_equip/abdominal/IMG_20201028_085135.jpg"]
+				   ["photo_equip/hands/IMG_20201030_162523.jpg","photo_equip/hands/IMG_20201028_085252.jpg"],
+				   ["photo_equip/hands/frzhstez-sitdown.jpg","photo_equip/hands/triceps__one_hand_izza_golovi.jpg"],
+				   ["photo_equip/hands/IMG_20201030_162304.jpg","photo_equip/hands/triceps_v_naklone.jpg"],
+				   ["photo_equip/hands/triceps_one_hand_v_bloke.jpg","photo_equip/hands/Obratnyie-razgibaniya-ruk-na-bloke-tehnika-vyipolneniya.jpg"],
+				   ["photo_equip/hands/biceps_podem_stanga.jpg","photo_equip/hands/podtygivania_biceps.jpg"],
+				   ["photo_equip/hands/podem-gantel_bicep_sidya.jpg","photo_equip/hands/biceps_gantel_skot_one_hand.png"],
+				   ["photo_equip/abdominal/press_turnik.jpg","photo_equip/abdominal/IMG_20201028_085135.jpg","photo_equip/abdominal/press_na_skame.jpg"]
 				  ],
 	"exercise_name":[
-					 ["Подтягивание в гравитроне широким хватом (противовес 130-140 фунтов)","Подтягивание в гравитроне параллельным хватом (противовес 130-140 фунтов)"],
-					 ["Вертикальная рычажная тяга широким хватом (вес 80-90 фунтов)","Вертикальная рычажная тяга параллельным хватом (вес 80-90 фунтов)"],
-					 ["Гоизонтальная рычажная тяга широким хватом (вес по 25кг(55 фунтов на каждую сторону))","Гоизонтальная рычажная тяга средним хватом (вес по 25кг(55 фунтов на каждую сторону))"],
-					 ["Тяга Т-грифа (вес 20кг(45 фунтов))","Тяга штанги средним хватом в наклоне (вес по 10-15кг (22-35фунтов) на каждую сторону)"],
-					 ["Гиперэкстензия с отягощением","Обратная гиперэкстензия в тренажере"],
-					 ["Подьемы ног в висе","Скручивания в тренажере для пресса"]
+					 ["Жим на трицепс в машине Хаммер(локти прижаты).Вес (по 25кг-55 фунтов с каждой стороны)","Отжимания на трицепс в гравитроне,локти прижаты.Противовес 150 фунтов"],
+					 ["Французкий жим сидя - изогнутый гриф (монолитная штанга 50-60 фунтов)","Разгибание на трицепс гантели одной рукой из-за головы(10-12 кг)"],
+					 ["Разгибания на трицепс в трицепс-машине","Разгибание на трицепс гантели в наклоне"],
+					 ["Разгибания на трицепс в блоке одной рукой","Разгибания на трицепс в блоке - обратный хват"],
+					 ["Подьем штанги на бицепс стоя","Подтягивания в гравитроне обратным хватом на бицепс. Противовес 150 фунтов"],
+					 ["Подьем гантелей 8кг на бицепс сидя - с супинацией ","Изолированный подьем гантели 8кг на бицепс одной рукой в скамье Скотта"],
+					 ["Подьемы ног в висе","Скручивания в тренажере для пресса","Подьемы ног лежа на спине"]
 				  	],
 	"src_video":[
-				 ["https://www.youtube.com/embed/gkrrGaeukY4","https://www.youtube.com/embed/BOUrymgJk4s"],
-				 ["https://www.youtube.com/embed/ZLr25N9buQ8","https://www.youtube.com/embed/JxstfbStOMA"],
-				 ["https://www.youtube.com/embed/Bx8QSth84lI","https://www.youtube.com/embed/ipldDlIVcm4"],
-				 ["https://www.youtube.com/embed/3Yjr0ulB_YI","https://www.youtube.com/embed/mdSuEs6YQ48"],
-				 ["https://www.youtube.com/embed/ykGsGlXkEVg","https://www.youtube.com/embed/zTKVfUW0EIo"],
-				 ["https://www.youtube.com/embed/MLRvcj4dYeQ","https://www.youtube.com/embed/4wNi4keR_JE"]
+				 ["https://www.youtube.com/embed/gPE0-KLc5zQ","https://www.youtube.com/embed/pSlfgn0nW4w"],
+				 ["https://www.youtube.com/embed/g9qNFl3yq9s","https://www.youtube.com/embed/YClQH0n_WZw"],
+				 ["https://www.youtube.com/embed/ZcVPqGfS5iE","https://www.youtube.com/embed/m8oM7C09BmI"],
+				 ["https://www.youtube.com/embed/7z0c2UIPY54","https://www.youtube.com/embed/LzNslDsoIcs"],
+				 ["https://www.youtube.com/embed/ztrd2rCc1hA","https://www.youtube.com/embed/ufmuhq82gLM"],
+				 ["https://www.youtube.com/embed/Kkp0anSdkPY","https://www.youtube.com/embed/V61gI5P5_3w"],
+				 ["https://www.youtube.com/embed/MLRvcj4dYeQ","https://www.youtube.com/embed/4wNi4keR_JE","https://www.youtube.com/embed/0NrOMts6pzc"]
 				],
-	"superset":[false,false,false,false,false,false],
+	"superset":[false,false,false,false,false,false,false],
 	"circle":[false,false,false,false,false,false,false],
 	"details":[[{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
-			   [{"rounds":4,"reps":20},{"rounds":4,"reps":20}]
+			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
+			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15},{"rounds":4,"reps":15}]
 		 	  ]
 }
