@@ -10,6 +10,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">	
 </head>
 <body onload="checkCookie()">
+	<script type="text/javascript">
+		function handleKey(evt) {
+		  if (evt.keyCode === 13 || evt.keyCode === 14) {
+		      FormHandler();
+		  }
+		}
+	</script>
 		<div class="wrap_logon" id="logon"> 
 			<img src="img/dumbells1.jpg" class="bgstart">
 			<div class="name_head">
