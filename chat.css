@@ -196,6 +196,7 @@
 @media only screen and (max-width: 800px) {
 	.chat_container {
 		width: 100%;
+		height: auto;
 		margin-left: -50%;
 		grid-template-areas:"head-chat head-camera"
 		"chatbox chatbox"
