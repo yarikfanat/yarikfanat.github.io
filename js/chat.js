@@ -128,7 +128,7 @@ function handleSendButton () {
 	chatbox.scrollTop = chatbox.scrollHeight - chatbox.clientHeight;
 	//document.getElementById("chat_win").insertAdjacentHTML('beforeend', '<span style="color:red">'+date+'</span>'+
 	  // 												       '<span style="background-color:silver;color:black">&nbsp'+msg.text+'</span><br>');
-	chatbox.value = "";
+	document.getElementById("chat_win").value = "";
 	  	
 }
 
