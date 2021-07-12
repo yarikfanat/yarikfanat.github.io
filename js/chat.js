@@ -76,8 +76,11 @@ function connect() {
 		      break;
 			   
 		    case "message":
-		      document.getElementById("chat_win").insertAdjacentHTML('beforeend', '<span style="color:red">'+msg.date+'</span>'+
-		      													     '<span style="color:blue">&nbsp'+msg.from_user+'=>&nbsp</span>'+msg.text+'<br>')	
+		    var chatbox = document.getElementById("chat_win");
+		      chatbox.insertAdjacentHTML('beforeend', '<span style="color:red">'+msg.date+'</span>'+
+		      						     '<span style="color:blue">&nbsp'+msg.from_user+'=>&nbsp</span>'+msg.text+'<br>');
+		      chatbox.scrollTop = chatbox.scrollHeight - chatbox.clientHeight;
+
 		      break;	
 		    case "video-offer":  
 		      handleVideoOfferMsg(msg);
@@ -219,7 +222,7 @@ function ChoiceChat(event) {
 			styleElem.insertAdjacentHTML('beforeend', "#"+event.target.id+":after {border-color:  rgb(106,181,255) transparent transparent transparent;}");
 			styleElem.insertAdjacentHTML('beforeend', "#head_chat:after {border-color:  rgb(201,201,201) transparent transparent transparent;}");
 
-			container.style.height = '360px';
+			container.style.height = '370px';
 			container.style.gridTemplateAreas = '"head-chat head-camera" "camerabox camerabox"'
 			container.style.gridTemplateRows = 'auto 1fr';
 			video_chat.style.width = '100%';
