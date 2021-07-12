@@ -207,9 +207,15 @@
 	input[id='text_chat'] {
 		width: 75%;
 	}
-	
+	#local_video {
+		width: 70px;
+		height: 70px;
+	}
 	.chatbox {
 		margin-right: 1rem;
+	}
+	.head-users,.head-chat,.head-camera {
+		font-size: 12px;
 	}
 	.head-chat,.head-users {
 		background: rgb(106,181,255);		
