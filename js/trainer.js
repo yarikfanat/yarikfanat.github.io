@@ -1,5 +1,6 @@
 var conf_json,complex,tool_tip;
 var player_hide=true;
+var chat_hide=true;
 var src_video='';
 
 function Init() {
@@ -99,6 +100,40 @@ function ExerciseLists (but,id_list) {
 	}
 }
 
+function WebRTCChat () {	
+
+	if (!webSocket)
+		connect ();
+	if (msg_connect.user_name)
+		ShowChat ();
+	else
+		setTimeout (()=> {
+			if (msg_connect.user_name==null) 
+			{
+				alert ("Нет связи с WebSocket сервером сигнализации или он выключен.Повторите попытку немного позже");
+				return;			
+			}else
+			{
+				ShowChat ();
+			}
+		},5000);
+}
+
+function ShowChat () {
+	var chat = document.getElementById ('chat');
+
+	if (chat_hide)
+	{
+		chat.classList.remove ('animation_chat_hide');
+		chat.classList.add ('animation_chat_show');
+		chat_hide = false;
+	}else
+	{
+		chat.classList.remove ('animation_chat_show');
+		chat.classList.add ('animation_chat_hide');		
+		chat_hide = true;				
+	}
+}
 function PlayVideo () {
 	
 	if (src_video == '')
