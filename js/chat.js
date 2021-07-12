@@ -222,7 +222,7 @@ function ChoiceChat(event) {
 			styleElem.insertAdjacentHTML('beforeend', "#"+event.target.id+":after {border-color:  rgb(106,181,255) transparent transparent transparent;}");
 			styleElem.insertAdjacentHTML('beforeend', "#head_chat:after {border-color:  rgb(201,201,201) transparent transparent transparent;}");
 
-			container.style.height = '370px';
+			container.style.height = '380px';
 			container.style.gridTemplateAreas = '"head-chat head-camera" "camerabox camerabox"'
 			container.style.gridTemplateRows = 'auto 1fr';
 			video_chat.style.width = '100%';
