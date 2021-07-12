@@ -48,7 +48,7 @@ function connect() {
 	  	scheme += "s";
 	}
 //	serverUrl = scheme + "://" + myHostname + ":8080";
-	serverUrl = scheme+"://958808a1fa4f.ngrok.io"
+	serverUrl = scheme+"://534e011001be.ngrok.io"
   	log(`Connecting to server: ${serverUrl}`);
 	webSocket = new WebSocket(serverUrl);
 
@@ -77,8 +77,10 @@ function connect() {
 			   
 		    case "message":
 		    var chatbox = document.getElementById("chat_win");
-		      chatbox.insertAdjacentHTML('beforeend', '<span style="color:red">'+msg.date+'</span>'+
-		      						     '<span style="color:blue">&nbsp'+msg.from_user+'=>&nbsp</span>'+msg.text+'<br>');
+		   //   chatbox.insertAdjacentHTML('beforeend', '<span style="color:red">'+msg.date+'</span>'+
+		     // 						     '<span style="color:blue">&nbsp'+msg.from_user+'=>&nbsp</span>'+msg.text+'<br>');
+		      text =  '<span style="color:red">'+msg.date+'</span>'+'<span style="color:blue">&nbsp'+msg.from_user+'=>&nbsp</span>'+msg.text+'<br>';
+		      chatbox.innerHTML += text;
 		      chatbox.scrollTop = chatbox.scrollHeight - chatbox.clientHeight;
 
 		      break;	
@@ -117,9 +119,14 @@ function handleSendButton () {
 	webSocket.send(JSON.stringify(msg));
 	var d = new Date();
 	var date = d.toLocaleDateString()+' '+d.toLocaleTimeString();
-	document.getElementById("chat_win").insertAdjacentHTML('beforeend', '<span style="color:red">'+date+'</span>'+
-	   												       '<span style="background-color:silver;color:black">&nbsp'+msg.text+'</span><br>');
-	document.getElementById("text_chat").value = "";
+	var chatbox = document.getElementById("chat_win");
+	var text =  '<span style="color:red">'+date+'</span>'+'<span style="background-color:rgb(166,210,255);color:black;font-style:italic;padding:7px;border-radius:4px;">&nbsp'+msg.text+'</span><br>';
+
+	chatbox.innerHTML += text;
+	chatbox.scrollTop = chatbox.scrollHeight - chatbox.clientHeight;
+	//document.getElementById("chat_win").insertAdjacentHTML('beforeend', '<span style="color:red">'+date+'</span>'+
+	  // 												       '<span style="background-color:silver;color:black">&nbsp'+msg.text+'</span><br>');
+	//document.getElementById("text_chat").value = "";
 	  	
 }
 
