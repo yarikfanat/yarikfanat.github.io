@@ -120,13 +120,15 @@ function handleSendButton () {
 	var d = new Date();
 	var date = d.toLocaleDateString()+' '+d.toLocaleTimeString();
 	var chatbox = document.getElementById("chat_win");
-	var text =  '<span style="color:red">'+date+'</span>'+'<span style="background-color:rgb(166,210,255);color:black;font-style:italic;padding:7px;border-radius:4px;">&nbsp'+msg.text+'</span><br>';
+	var text =  '<span style="color:red">'+date+'</span>'+
+	            '<span style="background-color:rgb(166,210,255);color:black;font-style:italic;padding:7px;border-radius:8px;line-height:1.5">&nbsp'+msg.text+
+	            '</span><br>';
 
 	chatbox.innerHTML += text;
 	chatbox.scrollTop = chatbox.scrollHeight - chatbox.clientHeight;
 	//document.getElementById("chat_win").insertAdjacentHTML('beforeend', '<span style="color:red">'+date+'</span>'+
 	  // 												       '<span style="background-color:silver;color:black">&nbsp'+msg.text+'</span><br>');
-	//document.getElementById("text_chat").value = "";
+	chatbox.value = "";
 	  	
 }
 
