@@ -77,8 +77,7 @@ function connect() {
 			   
 		    case "message":
 		    var chatbox = document.getElementById("chat_win");
-		   //   chatbox.insertAdjacentHTML('beforeend', '<span style="color:red">'+msg.date+'</span>'+
-		     // 						     '<span style="color:blue">&nbsp'+msg.from_user+'=>&nbsp</span>'+msg.text+'<br>');
+		  
 		      text =  '<span style="color:red">'+msg.date+'</span>'+'<span style="color:blue">&nbsp'+msg.from_user+'=>&nbsp</span>'+msg.text+'<br>';
 		      chatbox.innerHTML += text;
 		      chatbox.scrollTop = chatbox.scrollHeight - chatbox.clientHeight;
@@ -121,14 +120,12 @@ function handleSendButton () {
 	var date = d.toLocaleDateString()+' '+d.toLocaleTimeString();
 	var chatbox = document.getElementById("chat_win");
 	var text =  '<span style="color:red">'+date+'</span>'+
-	            '<span style="background-color:rgb(166,210,255);color:black;font-style:italic;padding:7px;border-radius:8px;line-height:1.5">&nbsp'+msg.text+
+	            '<span style="background-color:rgb(166,210,255);color:black;font-style:italic;padding:7px;border-radius:8px;line-height:2">&nbsp'+msg.text+
 	            '</span><br>';
 
 	chatbox.innerHTML += text;
 	chatbox.scrollTop = chatbox.scrollHeight - chatbox.clientHeight;
-	//document.getElementById("chat_win").insertAdjacentHTML('beforeend', '<span style="color:red">'+date+'</span>'+
-	  // 												       '<span style="background-color:silver;color:black">&nbsp'+msg.text+'</span><br>');
-	document.getElementById("chat_win").value = "";
+	document.getElementById("text_chat").value = "";
 	  	
 }
 
