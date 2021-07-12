@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="animate.css">
 	<link rel="stylesheet" type="text/css" href="start.css">
 	<link rel="stylesheet" type="text/css" href="trainer.css">	
+	<link rel="stylesheet" type="text/css" href="chat.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 </head>
 <body onload="checkCookie()">
@@ -22,8 +23,8 @@
 					<p><b>Введите имя пользователя:</b></p>
 					<input type="text" id="usr" value="">
 					<p><b>Введите пароль:</b></p>
-					<input type="password" id="pass" value="">
-					<input type="button" value="Подтвердить" onclick="FormHandler()">
+					<input type="password" id="pass" value="" onkeyup="handleKey(event)">
+					<input type="button" id="btn" value="Подтвердить" onclick="FormHandler()">
 					<p><input type="checkbox" checked id="chk"><span><b>Сохранить данные</b></span></p>
 				</div>
 			</div> 
@@ -34,11 +35,31 @@
 			<iframe src="" class="video_player" id="player" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen>
 			
 			</iframe>
+			<div class="chat_container" id="chat">
+				<div class="head-users" id="head_users">Подключенные пользователи</div>
+				<div class="head-chat" id="head_chat" onclick="ChoiceChat(event)">Текстовый чат</div>
+				<div class="head-camera" id="head_camera" onclick="ChoiceChat(event)">Видеочат</div>
+				<ul class="userslistbox" id="userslist"></ul>
+				<div class="chatbox" id="chat_win"></div>
+				<div class="camerabox" id="camera_win">
+					 <video id="received_video" autoplay></video>
+				     <video id="local_video" autoplay muted></video>
+				     <button id="hangup-button" onclick="hangUpCall();" role="button" disabled>
+				        Повесить трубку
+				     </button>
+				</div>				
+				<div class="chat_controls" id="controls">
+					 Чат:<br/>
+					<input id="text_chat" type="text" name="text" size="100" maxlength="256" placeholder="Здесь набирается текст ..." autocomplete="off" onkeyup="handleKey2(event)" disabled>
+					<input type="button" id="send" name="send" value="Send" onclick="handleSendButton()" disabled>
+				</div>
+			</div> 
 			<div class="header_back"></div>
 			<div class="photo_dumbells1"></div>
 			<div class="photo_dumbells2"></div>
 			<div class="block_video_btn"></div>
 			<div class="video_button" onclick="PlayVideo()"></div>
+			<img src="img/webcam96_off.png" width="96" height="96" class="webrtc" id="webcam" onclick="WebRTCChat()">
 		</div>
 		<div class="full_wrap" id="wrap">
 			<div class="content" id="content1">
@@ -115,6 +136,8 @@
 			</div>
 			<div style="clear:both"></div>
 		</div>		
+		<script type="text/javascript" src="js/adapter.js"></script>
+		<script type="text/javascript" src="js/chat.js"></script>
 		<script type="text/javascript" src="js/float_tooltip.js"></script> 
 		<script type="text/javascript" src="js/trainer.js"></script>
 		<script type="text/javascript" src="js/start.js"></script>

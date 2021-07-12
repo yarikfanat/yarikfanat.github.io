@@ -62,6 +62,18 @@
 	background-image: url(img/dumbells1.jpg);
 	z-index: 5;
 }
+.webrtc {
+	position: absolute;
+	top: 70px;
+	left: 17%;
+	margin-left: -48px;
+	z-index: 5;
+}
+.webrtc:hover {
+	 content: url(img/webcam96_on.png);
+	 cursor: pointer;
+
+}
 .photo_dumbells2 {
 	position: absolute;
 	width: 35%;
@@ -158,6 +170,8 @@
 	z-index: 3;
 /*	display: none;*/
 }
+
+
 .animation_player_show {
 	-webkit-animation-name: player_show; 
 	animation-name: player_show;
@@ -178,7 +192,7 @@
 	-webkit-animation-name: exercises_show;
 	 animation-name: exercises_show;
 }
-.animation_lists_hide,.animation_lists_show,.animation_player_show,.animation_player_hide {
+.animation_chat_hide,.animation_chat_show,.animation_lists_hide,.animation_lists_show,.animation_player_show,.animation_player_hide {
     -webkit-animation-duration: 0.5s;  /* Safari 4.0 - 8.0 */
     -webkit-animation-timing-function: linear;    
     -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
@@ -210,6 +224,8 @@
     animation-delay: 0.25s;
    -webkit-animation-delay:0.25s;
 }
+
+
 @-webkit-keyframes player_show {
     from {top: -248px;}
     to {top: 240px;}
@@ -285,11 +301,18 @@
 	cursor: pointer;
 	border-color: blue;
 }
+@media only screen and (max-width: 1300px) {
+	
+}
 @media only screen and (max-width: 1100px) {
 	.content  {
 		width: 100%;
 		text-align: center;
 	}
+	
+}
+@media only screen and (max-width: 800px) {
+	
 }
 @media only screen and (max-width: 600px) {
 	.video_player {
@@ -298,6 +321,7 @@
 		left: 0px;
 		height: auto;
 	}
+	
 	.content  {
 		width: 100%;
 		text-align: center;
@@ -311,6 +335,18 @@
 	.block_video_btn {
 		top: 10px;
 		height: 100px;
+	}
+	.webrtc {
+		top: 24px;
+		left: 18%;
+		margin-left: -36px;
+		content: url(img/webcam72_off.png);
+		width: 72px;
+		height: 72px;
+	}
+	.webrtc:hover {
+		content: url(img/webcam72_on.png);
+
 	}
 	.video_button {
 		height: 90px;
