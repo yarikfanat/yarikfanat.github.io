@@ -116,7 +116,7 @@ function WebRTCChat () {
 			{
 				ShowChat ();
 			}
-		},5000);
+		},2500);
 }
 
 function ShowChat () {
