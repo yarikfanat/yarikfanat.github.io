@@ -120,7 +120,7 @@ function handleSendButton () {
 	var date = d.toLocaleDateString()+' '+d.toLocaleTimeString();
 	var chatbox = document.getElementById("chat_win");
 	var text =  '<span style="color:red">'+date+'</span>'+
-	            '<span style="background-color:rgb(166,210,255);color:black;font-style:italic;padding:7px;border-radius:8px;line-height:2">&nbsp'+msg.text+
+	            '<span style="background-color:rgb(166,210,255);color:black;font-style:italic;padding:7px;border-radius:8px;line-height:2.2">&nbsp'+msg.text+
 	            '</span><br>';
 
 	chatbox.innerHTML += text;
