@@ -207,9 +207,12 @@
 	input[id='text_chat'] {
 		width: 75%;
 	}
+	#hangup-button {
+		top:60%;
+	}
 	#local_video {
-		width: 70px;
-		height: 70px;
+		width: 77px;
+		height: 77px;
 	}
 	.chatbox {
 		margin-right: 1rem;
