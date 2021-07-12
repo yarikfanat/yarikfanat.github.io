@@ -51,6 +51,8 @@ function checkCookie() {
   }
 }
 
+
+
 function FormHandler () {
 
    var user_element=document.getElementById ('usr');
@@ -60,6 +62,8 @@ function FormHandler () {
    password = pass_element.value;
    CheckUser ();
 }
+
+
 
 function CheckUser() {
   var xhttp = new XMLHttpRequest();
