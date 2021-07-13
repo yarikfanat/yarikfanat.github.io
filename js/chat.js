@@ -290,7 +290,7 @@ async function createPeerConnection() {
   myPeerConnection = new RTCPeerConnection({
     iceServers: [     
 			      	{ 	urls: ["stun:stun.stunprotocol.org","stun:stun1.l.google.com:19302","stun:stun2.l.google.com:19302",
-							   "stun:stun3.l.google.com:19302","stun:stun4.l.google.com:19302","stun:stun.ekiga.net","stun:stun.ideasip.com","stun:stun.rixtelecom.se",
+							   "stun:stun4.l.google.com:19302","stun:stun.ekiga.net","stun:stun.ideasip.com","stun:stun.rixtelecom.se",
 							   "stun:stun.schlund.de"] 
 					},
 				    {
@@ -393,6 +393,12 @@ function handleSignalingStateChangeEvent(event) {
       closeVideoCall();
       break;
   }
+}
+
+function log_error(text) {
+  var time = new Date();
+
+  console.trace("[" + time.toLocaleTimeString() + "] " + text);
 }
 
 function handleICEGatheringStateChangeEvent(event) {
