@@ -48,7 +48,8 @@ function connect() {
 	  	scheme += "s";
 	}
 //	serverUrl = scheme + "://" + myHostname + ":8080";
-	serverUrl = scheme+"://56e1653bbc9d.ngrok.io"
+//	serverUrl = scheme+"://56e1653bbc9d.ngrok.io"
+    serverUrl = scheme+"://my-node-serverjs.appspot.com"
   	log(`Connecting to server: ${serverUrl}`);
 	webSocket = new WebSocket(serverUrl);
 
@@ -288,7 +289,10 @@ async function createPeerConnection() {
 
   myPeerConnection = new RTCPeerConnection({
     iceServers: [     
-			      	{ 	urls: ["stun:stun.stunprotocol.org","stun:stun1.l.google.com:19302"] },
+			      	{ 	urls: ["stun:stun.stunprotocol.org","stun:stun1.l.google.com:19302","stun2.l.google.com:19302",
+							   "stun3.l.google.com:19302","stun4.l.google.com:19302","stun.ekiga.net","stun.ideasip.com","stun.rixtelecom.se",
+							   "stun.schlund.de"] 
+					},
 				    {
 				      	urls: "turn:192.158.29.39:3478?transport=udp", 
 				      	credential: 'JZEOEt2V3Qb0y27GRntt2u2PAYA=', 
@@ -298,7 +302,17 @@ async function createPeerConnection() {
 				    	urls: 'turn:numb.viagenie.ca',
     					credential: 'muazkh',
     					username: 'webrtc@live.com'
-				    }
+				    },
+				    {
+					    url: 'turn:turn.bistri.com:80',
+					    credential: 'homeo',
+					    username: 'homeo'
+					},
+					{
+					    url: 'turn:turn.anyfirewall.com:443?transport=tcp',
+					    credential: 'webrtc',
+					    username: 'webrtc'
+					}
     			]
 
   });
