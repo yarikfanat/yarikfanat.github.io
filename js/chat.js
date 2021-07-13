@@ -48,7 +48,7 @@ function connect() {
 	  	scheme += "s";
 	}
 //	serverUrl = scheme + "://" + myHostname + ":8080";
-	serverUrl = scheme+"://534e011001be.ngrok.io"
+	serverUrl = scheme+"://56e1653bbc9d.ngrok.io"
   	log(`Connecting to server: ${serverUrl}`);
 	webSocket = new WebSocket(serverUrl);
 
@@ -61,7 +61,8 @@ function connect() {
 		else
 			msg_connect.func = 'client';
 		
-		webSocket.send(JSON.stringify(msg_connect));	
+		webSocket.send(JSON.stringify(msg_connect));
+		ShowChat ();	
 	};
 
 	webSocket.onmessage = (event)=> {
@@ -149,10 +150,12 @@ function CreateUserList (user_list) {
 		target_user = user_list[0];
 		document.getElementById("text_chat").disabled = false;
     	document.getElementById("send").disabled = false;
+    	document.getElementById("VideoCall").disabled = false;
 	}else
 	{
 		document.getElementById("text_chat").disabled = true;
     	document.getElementById("send").disabled = true;
+    	document.getElementById("VideoCall").disabled = true;
 	}
 }
 
