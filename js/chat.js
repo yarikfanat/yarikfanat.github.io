@@ -47,9 +47,9 @@ function connect() {
 	if (document.location.protocol === "https:") {
 	  	scheme += "s";
 	}
-//	serverUrl = scheme + "://" + myHostname + ":8080";
-//	serverUrl = scheme+"://56e1653bbc9d.ngrok.io"
-    serverUrl = scheme+"://my-node-serverjs.appspot.com"
+	serverUrl = scheme + "://" + myHostname + ":8080";
+	serverUrl = scheme+"://7727a4490a71.ngrok.io"
+//    serverUrl = scheme+"://my-node-serverjs.appspot.com"
   	log(`Connecting to server: ${serverUrl}`);
 	webSocket = new WebSocket(serverUrl);
 
