@@ -289,9 +289,9 @@ async function createPeerConnection() {
 
   myPeerConnection = new RTCPeerConnection({
     iceServers: [     
-			      	{ 	urls: ["stun:stun.stunprotocol.org","stun:stun1.l.google.com:19302",
-							   "stun3.l.google.com:19302","stun4.l.google.com:19302","stun.ekiga.net","stun.ideasip.com","stun.rixtelecom.se",
-							   "stun.schlund.de"] 
+			      	{ 	urls: ["stun:stun.stunprotocol.org","stun:stun1.l.google.com:19302","stun:stun2.l.google.com:19302",
+							   "stun:stun3.l.google.com:19302","stun:stun4.l.google.com:19302","stun:stun.ekiga.net","stun:stun.ideasip.com","stun:stun.rixtelecom.se",
+							   "stun:stun.schlund.de"] 
 					},
 				    {
 				      	urls: "turn:192.158.29.39:3478?transport=udp", 
