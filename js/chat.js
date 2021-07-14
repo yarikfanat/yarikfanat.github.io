@@ -80,9 +80,9 @@ function connect() {
 				{
 					console.log (date,' checkAlive()=> соединение умерло . Нужен reconnect');					
 					clearInterval(checkAlive);
-					alert (date,'Нужен reconnect');
+					webSocket = new WebSocket(serverUrl);
 				}
-		},30000);
+		},5000);
 		ShowChat ();	
 	};
 
