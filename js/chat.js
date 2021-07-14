@@ -14,8 +14,6 @@ var myPeerConnection = null;    // RTCPeerConnection
 var transceiver = null;         // RTCRtpTransceiver
 var webcamStream = null;        // MediaStream from webcam
 var target_user=null;
-var isAlive = false;
-var checkAlive = null;
 
 var msg_connect = {
 	type:'connect_user',
@@ -67,29 +65,6 @@ function connect() {
 		webSocket.send(JSON.stringify(msg_connect));
 		ShowChat ();	
 	};
-
-	webSocket.onping = ()=>{
-		var d = new Date();
-		var date = d.toLocaleDateString()+' '+d.toLocaleTimeString();
-		isAlive=true;
-		console.log(date,' Получил ping от сервера (я жив)');
-
-		if (!checkAlive)
-			checkAlive = setInterval (()=> {
-				var d = new Date();
-				var date = d.toLocaleDateString()+' '+d.toLocaleTimeString();
-
-				if (isAlive==true)
-				{
-					console.log (date,' checkAlive()=> соединение живое');
-					isAlive=false;
-				}else
-					console.log (date,' checkAlive()=> соединение умерло');
-
-			},30000+1000);
-	};
-
-//	webSocket.on ('close',()=> {clearInterval(checkAlive);});
 
 	webSocket.onmessage = (event)=> {
 		  	
