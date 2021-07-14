@@ -1,3 +1,4 @@
+var serverUrl;
 var webSocket=null;
 var mediaConstraints = {
   audio: true,            
@@ -37,7 +38,7 @@ function sendToServer(msg) {
 
 function connect() {
 	var scheme = "ws";
-	var serverUrl;
+	
 
 	var myHostname = window.location.hostname;
 	if (!myHostname) {
@@ -120,7 +121,7 @@ function connect() {
 		    case "hang-up": 
 		      handleHangUpMsg(msg);
 		      break;	
-		    case "ping_:"
+		    case "ping_":
 		      sendToServer ({type:'pong_'});  	         
 		      break;
 			case "ping":
