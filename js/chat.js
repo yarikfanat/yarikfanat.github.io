@@ -68,7 +68,7 @@ function connect() {
 		ShowChat ();	
 	};
 
-	webSocket.on ('ping',()=>{
+	webSocket.onping = ()=>{
 		var d = new Date();
 		var date = d.toLocaleDateString()+' '+d.toLocaleTimeString();
 		isAlive=true;
@@ -87,9 +87,9 @@ function connect() {
 					console.log (date,' checkAlive()=> соединение умерло');
 
 			},30000+1000);
-	});
+	};
 
-	webSocket.on ('close',()=> {clearInterval(checkAlive);});
+//	webSocket.on ('close',()=> {clearInterval(checkAlive);});
 
 	webSocket.onmessage = (event)=> {
 		  	
