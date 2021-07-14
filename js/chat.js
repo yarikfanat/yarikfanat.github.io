@@ -49,7 +49,7 @@ function connect() {
 	  	scheme += "s";
 	}
 //	serverUrl = scheme + "://" + myHostname + ":8080";
-	serverUrl = scheme+"://7fda68e99e0c.ngrok.io"
+	serverUrl = scheme+"://9a20972225f5.ngrok.io"
 //    serverUrl = scheme+"://my-node-serverjs.appspot.com"
   	log(`Connecting to server: ${serverUrl}`);
 	webSocket = new WebSocket(serverUrl);
