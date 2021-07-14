@@ -8,7 +8,7 @@ var mediaConstraints = {
     }
   }
 };
-
+var serverUrl;
 var myUsername = null;
 var myPeerConnection = null;    // RTCPeerConnection
 var transceiver = null;         // RTCRtpTransceiver
@@ -37,7 +37,7 @@ function sendToServer(msg) {
 
 function connect() {
 	var scheme = "ws";
-	var serverUrl;
+	
 
 	var myHostname = window.location.hostname;
 	if (!myHostname) {
@@ -80,9 +80,10 @@ function connect() {
 				{
 					console.log (date,' checkAlive()=> соединение умерло . Нужен reconnect');					
 					clearInterval(checkAlive);
+					log(`ReConnecting to server: ${serverUrl}`);
 					webSocket = new WebSocket(serverUrl);
 				}
-		},5000);
+		},15000);
 		ShowChat ();	
 	};
 
@@ -118,7 +119,10 @@ function connect() {
 
 		    case "hang-up": 
 		      handleHangUpMsg(msg);
-		      break;		         
+		      break;	
+		    case "ping_:"
+		      sendToServer ({type:'pong_'});  	         
+		      break;
 			case "ping":
 			  var d = new Date();
 	          var date = d.toLocaleDateString()+' '+d.toLocaleTimeString();
