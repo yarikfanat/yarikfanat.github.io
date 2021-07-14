@@ -14,6 +14,7 @@ var myPeerConnection = null;    // RTCPeerConnection
 var transceiver = null;         // RTCRtpTransceiver
 var webcamStream = null;        // MediaStream from webcam
 var target_user=null;
+var isAlive=false;
 
 var msg_connect = {
 	type:'connect_user',
@@ -61,8 +62,26 @@ function connect() {
 			msg_connect.func = 'trainer';
 		else
 			msg_connect.func = 'client';
-		
+		isAlive=true;
 		webSocket.send(JSON.stringify(msg_connect));
+
+		const checkAlive = setInterval (()=> {
+			var d = new Date();
+			var date = d.toLocaleDateString()+' '+d.toLocaleTimeString();
+			
+				if (isAlive==true)
+				{
+					console.log (date,' checkAlive()=> соединение живое ');
+					isAlive=false;
+
+					console.log ('Отправляю pong серверу');
+		    		sendToServer ({type:'pong'});
+				}else
+				{
+					console.log (date,' checkAlive()=> соединение умерло . Нужен reconnect');					
+					clearInterval(checkAlive);
+				}
+		},30000);
 		ShowChat ();	
 	};
 
@@ -99,7 +118,12 @@ function connect() {
 		    case "hang-up": 
 		      handleHangUpMsg(msg);
 		      break;		         
-			    
+			case "ping":
+			  var d = new Date();
+	          var date = d.toLocaleDateString()+' '+d.toLocaleTimeString();
+			  isAlive=true;
+			  console.log (date,' получен ping от сервера <я жив>');
+			  break;	
 	  	}
 	  	
 	};
