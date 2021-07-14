@@ -8,7 +8,7 @@ var mediaConstraints = {
     }
   }
 };
-var serverUrl;
+
 var myUsername = null;
 var myPeerConnection = null;    // RTCPeerConnection
 var transceiver = null;         // RTCRtpTransceiver
@@ -37,7 +37,7 @@ function sendToServer(msg) {
 
 function connect() {
 	var scheme = "ws";
-	
+	var serverUrl;
 
 	var myHostname = window.location.hostname;
 	if (!myHostname) {
