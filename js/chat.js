@@ -80,6 +80,7 @@ function connect() {
 				{
 					console.log (date,' checkAlive()=> соединение умерло . Нужен reconnect');					
 					clearInterval(checkAlive);
+					alert (date,'Нужен reconnect');
 				}
 		},30000);
 		ShowChat ();	
