@@ -37,10 +37,19 @@ function sendToServer(msg) {
   webSocket.send(msgJSON);
 }
 
+function ReconnectChat() {
+	if (confirm("Сбросить текущее websocket сединение и установить заново?"))
+    {
+    	log (Переустановка websocket соединения по запросу пользователя ..);
+    	webSocket.close ();
+		reconnect=true;
+		connect ();
+    }
+}
+
 function connect() {
 	var scheme = "ws";
 	
-
 	var myHostname = window.location.hostname;
 	if (!myHostname) {
   		myHostname = "localhost";
