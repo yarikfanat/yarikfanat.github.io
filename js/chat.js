@@ -1,5 +1,4 @@
 var serverUrl;
-var timeout_serv;
 var webSocket=null;
 var mediaConstraints = {
   audio: true,            
@@ -15,8 +14,9 @@ var myUsername = null;
 var myPeerConnection = null;    // RTCPeerConnection
 var transceiver = null;         // RTCRtpTransceiver
 var webcamStream = null;        // MediaStream from webcam
-var target_user=null;
-var isAlive=false;
+var target_user = null;
+var isAlive = false;
+var reconnect = false;
 
 var msg_connect = {
 	type:'connect_user',
@@ -67,14 +67,8 @@ function connect() {
 			msg_connect.func = 'client';
 		isAlive=true;
 
-		webSocket.send(JSON.stringify(msg_connect));
-		if (!timeout_serv)
-		timeout_serv=setTimeout (()=>{
-				console.log ('reconect to ', serverUrl);
-				webSocket.close ();
-				connect ();
-			},30000);
-/*
+		webSocket.send(JSON.stringify(msg_connect));		
+
 		const checkAlive = setInterval (()=> {
 			var d = new Date();
 			var date = d.toLocaleDateString()+' '+d.toLocaleTimeString();
@@ -92,10 +86,13 @@ function connect() {
 					clearInterval(checkAlive);
 					log(`ReConnecting to server: ${serverUrl}`);
 					webSocket.close ();
-					webSocket = new WebSocket(serverUrl);
+					reconnect=true;
+					connect ();
 				}
-		},15000);*/
-		ShowChat ();	
+		},15000);
+		if (!reconnect)
+			ShowChat ();	
+		reconnect = false;
 	};
 
 	webSocket.onmessage = (event)=> {
