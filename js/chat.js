@@ -1,4 +1,5 @@
 var serverUrl;
+var timeout_serv;
 var webSocket=null;
 var mediaConstraints = {
   audio: true,            
@@ -65,11 +66,13 @@ function connect() {
 		else
 			msg_connect.func = 'client';
 		isAlive=true;
+
 		webSocket.send(JSON.stringify(msg_connect));
-		setTimeout (()=>{
+		if (!timeout_serv)
+		timeout_serv=setTimeout (()=>{
 				console.log ('reconect to ', serverUrl);
 				webSocket.close ();
-				webSocket = new WebSocket(serverUrl);
+				connect ();
 			},30000);
 /*
 		const checkAlive = setInterval (()=> {
