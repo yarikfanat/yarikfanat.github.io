@@ -38,10 +38,11 @@ function sendToServer(msg) {
 }
 
 function ReconnectChat() {
-	if (confirm("Сбросить текущее websocket сединение и установить заново?"))
+	if (confirm("Сбросить текущее websocket соединение и установить заново?"))
     {
     	log (Переустановка websocket соединения по запросу пользователя ..);
-    	webSocket.close ();
+    	if (webSocket !=null)
+    		webSocket.close ();
 		reconnect=true;
 		connect ();
     }
@@ -94,7 +95,8 @@ function connect() {
 					console.log (date,' checkAlive()=> соединение умерло . Нужен reconnect');					
 					clearInterval(checkAlive);
 					log(`ReConnecting to server: ${serverUrl}`);
-					webSocket.close ();
+					if (webSocket !=null)
+						webSocket.close ();
 					reconnect=true;
 					connect ();
 				}
