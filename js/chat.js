@@ -40,7 +40,7 @@ function sendToServer(msg) {
 function ReconnectChat() {
 	if (confirm("Сбросить текущее websocket соединение и установить заново?"))
     {
-    	log (Переустановка websocket соединения по запросу пользователя ..);
+    	log ("Переустановка websocket соединения по запросу пользователя ..");
     	if (webSocket !=null)
     		webSocket.close ();
 		reconnect=true;
