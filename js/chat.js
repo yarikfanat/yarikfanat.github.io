@@ -67,6 +67,7 @@ function connect() {
 		isAlive=true;
 		webSocket.send(JSON.stringify(msg_connect));
 		setTimeout (()=>{
+				console.log ('reconect to ', serverUrl);
 				webSocket.close ();
 				webSocket = new WebSocket(serverUrl);
 			},30000);
