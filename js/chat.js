@@ -66,7 +66,11 @@ function connect() {
 			msg_connect.func = 'client';
 		isAlive=true;
 		webSocket.send(JSON.stringify(msg_connect));
-
+		setTimeout (()=>{
+				webSocket.close ();
+				webSocket = new WebSocket(serverUrl);
+			},30000);
+/*
 		const checkAlive = setInterval (()=> {
 			var d = new Date();
 			var date = d.toLocaleDateString()+' '+d.toLocaleTimeString();
@@ -83,9 +87,10 @@ function connect() {
 					console.log (date,' checkAlive()=> соединение умерло . Нужен reconnect');					
 					clearInterval(checkAlive);
 					log(`ReConnecting to server: ${serverUrl}`);
+					webSocket.close ();
 					webSocket = new WebSocket(serverUrl);
 				}
-		},15000);
+		},15000);*/
 		ShowChat ();	
 	};
 
