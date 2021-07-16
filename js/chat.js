@@ -608,7 +608,7 @@ function hangUpCall() {/*
   var headwrap = document.getElementById ('head');
 //  var fullwrap = document.getElementById ('wrap');
  // fullwrap.style.display = 'none';
- // headwrap.style.height='100%';
+  headwrap.style.height='100%';
   head_camera.style.display = 'none';
   head_chat.style.display = 'none';
   container.style.top = '-120px';
