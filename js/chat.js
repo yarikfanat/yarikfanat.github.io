@@ -633,6 +633,12 @@ function hangUpCall() {/*
   video_chat.style.height = '100%';
 
   video_chat.style.display = 'block';
- // var mediaConstraints.video.aspectRatio.ideal = container.clientHeight/container.clientWidth;
- 
+  mediaConstraints.video.aspectRatio.ideal = container.clientHeight/container.clientWidth;
+   try {
+      webcamStream.getTracks().forEach(
+        (track)=> {track.applyConstraints(mediaConstraints);}
+      );
+    } catch(err) {
+      console.error('Ошибка при установке новых настроек экрана->', err.message);
+    }
 }
