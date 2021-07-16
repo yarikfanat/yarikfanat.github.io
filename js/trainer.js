@@ -101,7 +101,7 @@ function ExerciseLists (but,id_list) {
 }
 
 function WebRTCChat () {	
-
+	ShowChat ();return;
 	if (!webSocket)
 		connect ();
 	else
