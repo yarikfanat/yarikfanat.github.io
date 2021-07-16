@@ -62,7 +62,7 @@ function connect() {
 	}
 //	serverUrl = scheme + "://" + myHostname + ":8080";
 
-	serverUrl = scheme+"://efc18066f446.ngrok.io"
+	serverUrl = scheme+"://492a0c0853b8.ngrok.io"
 //    serverUrl = scheme+"://my-node-serverjs.appspot.com"
   	log(`Connecting to server: ${serverUrl}`);
 	webSocket = new WebSocket(serverUrl);
@@ -592,7 +592,7 @@ function handleHangUpMsg(msg) {
   closeVideoCall();
 }
 
-function hangUpCall() {
+function hangUpCall() {/*
   var msg={
   	from_user: myUsername,
     target: target_user,
@@ -600,6 +600,23 @@ function hangUpCall() {
   };
 
   closeVideoCall();
-  sendToServer(msg);
-  
+  sendToServer(msg);*/
+  var container = document.getElementById ('chat');
+  var video_chat = document.getElementById ('camera_win');
+  var head_chat = document.getElementById ('head_chat');
+  var head_camera = document.getElementById ('head_camera');
+  var headwrap = document.getElementById ('head');
+  var fullwrap = document.getElementById ('wrap');
+  fiilwrap.style.display = 'none';
+  headwrap.style.display = 'none';
+  head_camera.style.display = 'none';
+  head_chat.style.display = 'none';
+  container.style.height = '100%';
+  container.style.weight = '100%';
+  container.style.gridTemplateAreas = '"camerabox"'
+  container.style.gridTemplateRows = '1fr';
+  container.style.gridTemplateColumns = '1fr';
+  video_chat.style.width = '100%';
+  video_chat.style.height = '100%';
+  video_chat.style.display = 'block';
 }
