@@ -603,6 +603,7 @@ function hangUpCall() {/*
   sendToServer(msg);*/
   
  var container = document.getElementById ('chat');
+ local_video = document.getElementById ('local_video');
  /*  var video_chat = document.getElementById ('camera_win');
   var head_chat = document.getElementById ('head_chat');
   var head_camera = document.getElementById ('head_camera');
@@ -625,17 +626,24 @@ function hangUpCall() {/*
   video_chat.style.height = '100%';
 
   video_chat.style.display = 'block';*/
-  mediaConstraints.video.aspectRatio.ideal = 1.0;
+  
   console.log ('меняю aspectRatio на',mediaConstraints.video.aspectRatio.ideal);
   console.log ('высота области=',container.clientHeight,'px ширина области=',container.clientWidth,'px');
- 
+
    try {
-   	console.log ('video tracks=',webcamStream.getVideoTracks().length);
+   	console.log ('webcamStream video tracks=',webcamStream.getVideoTracks().length);
       webcamStream.getVideoTracks().forEach(
         (track)=> {
         	track.applyConstraints({
+        	width: local_video.style.width,
+        	height: local_video.style.height
+        });
+    });
+      	console.log ('received_video tracks=',document.getElementById("received_video").srcObject.getVideoTracks().length);
+      document.getElementById("received_video").srcObject.getVideoTracks().forEach((track)=> {
+        	track.applyConstraints({
         	width: container.clientWidth,
-        	height: container.clientWidth
+        	height: container.clientHeight
         });
     });
 
