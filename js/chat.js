@@ -607,13 +607,13 @@ function hangUpCall() {/*
   var head_camera = document.getElementById ('head_camera');
   var headwrap = document.getElementById ('head');
   var fullwrap = document.getElementById ('wrap');
-  fiilwrap.style.display = 'none';
+  fullwrap.style.display = 'none';
   headwrap.style.display = 'none';
   head_camera.style.display = 'none';
   head_chat.style.display = 'none';
   container.style.height = '100%';
-  container.style.weight = '100%';
-  container.style.gridTemplateAreas = '"camerabox"'
+  container.style.width = '100%';
+  container.style.gridTemplateAreas = '"camerabox"';
   container.style.gridTemplateRows = '1fr';
   container.style.gridTemplateColumns = '1fr';
   video_chat.style.width = '100%';
