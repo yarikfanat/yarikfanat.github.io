@@ -608,15 +608,18 @@ function hangUpCall() {/*
   var headwrap = document.getElementById ('head');
 //  var fullwrap = document.getElementById ('wrap');
  // fullwrap.style.display = 'none';
-  headwrap.style.display = 'none';
+  headwrap.style.height='100%';
   head_camera.style.display = 'none';
   head_chat.style.display = 'none';
+  container,style.top = '0';
   container.style.height = '100%';
   container.style.width = '100%';
+  container.style.zIndex = '6';
   container.style.gridTemplateAreas = '"camerabox"';
   container.style.gridTemplateRows = '1fr';
   container.style.gridTemplateColumns = '1fr';
   video_chat.style.width = '100%';
   video_chat.style.height = '100%';
+
   video_chat.style.display = 'block';
 }
