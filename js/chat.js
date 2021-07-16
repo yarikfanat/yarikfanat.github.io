@@ -601,9 +601,9 @@ function hangUpCall() {/*
 
   closeVideoCall();
   sendToServer(msg);*/
-  /*
-  var container = document.getElementById ('chat');
-  var video_chat = document.getElementById ('camera_win');
+  
+ var container = document.getElementById ('chat');
+ /*  var video_chat = document.getElementById ('camera_win');
   var head_chat = document.getElementById ('head_chat');
   var head_camera = document.getElementById ('head_camera');
   var headwrap = document.getElementById ('head');
@@ -627,12 +627,17 @@ function hangUpCall() {/*
   video_chat.style.display = 'block';*/
   mediaConstraints.video.aspectRatio.ideal = 1.0;
   console.log ('меняю aspectRatio на',mediaConstraints.video.aspectRatio.ideal);
-//  console.log ('высота области=',container.clientHeight,'px ширина области=',container.clientWidth,'px');
+  console.log ('высота области=',container.clientHeight,'px ширина области=',container.clientWidth,'px');
    try {
    	console.log ('video tracks=',webcamStream.getVideoTracks().length);
       webcamStream.getVideoTracks().forEach(
-        (track)=> {track.applyConstraints({video:{aspectRatio: {ideal: 1.0 }}});}
-      );
+        (track)=> {
+        	track.applyConstraints({
+        	width: container.clientWidth,
+        	height: container.clientHeight
+        });
+    });
+
     } catch(err) {
       console.error('Ошибка при установке новых настроек экрана->', err.message);
     }
