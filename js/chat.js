@@ -629,9 +629,9 @@ function hangUpCall() {/*
   console.log ('меняю aspectRatio на',mediaConstraints.video.aspectRatio.ideal);
 //  console.log ('высота области=',container.clientHeight,'px ширина области=',container.clientWidth,'px');
    try {
-   	console.log ('mediastrem tracks=',webcamStream.getTracks().length);
-      webcamStream.getTracks().forEach(
-        (track)=> {track.applyConstraints(mediaConstraints);}
+   	console.log ('video tracks=',webcamStream.getVideoTracks().length);
+      webcamStream.getVideoTracks().forEach(
+        (track)=> {track.applyConstraints({video:{aspectRatio: {ideal: 1.0 }}});}
       );
     } catch(err) {
       console.error('Ошибка при установке новых настроек экрана->', err.message);
