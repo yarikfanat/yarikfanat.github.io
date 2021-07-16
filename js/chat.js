@@ -632,4 +632,6 @@ function hangUpCall() {/*
   video_chat.style.height = '100%';
 
   video_chat.style.display = 'block';
+  var txt='width='+container.clientWidth+' height='+container.clientHeight;
+  alert(txt);
 }
