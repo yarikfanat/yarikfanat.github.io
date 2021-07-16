@@ -108,10 +108,13 @@ function WebRTCChat () {
 	{
 		if (msg_connect.user_name)
 			ShowChat ();
-		else
-			alert ("Нет связи с WebSocket сервером сигнализации или он выключен.Повторите попытку немного позже");
-	}
-	
+		else if (confirm("Нет связи с WebSocket сервером сигнализации или он выключен. Повторите попытку?"))
+    	{
+    		if (webSocket)
+    			webSocket.close ();
+    		connect ();
+    	}
+	}	
 }
 
 function ShowChat () {
