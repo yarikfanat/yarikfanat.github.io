@@ -628,15 +628,14 @@ function hangUpCall() {/*
   mediaConstraints.video.aspectRatio.ideal = 1.0;
   console.log ('меняю aspectRatio на',mediaConstraints.video.aspectRatio.ideal);
   console.log ('высота области=',container.clientHeight,'px ширина области=',container.clientWidth,'px');
-  var txt='высота области='+container.clientHeight+'px ширина области='+container.clientWidth+'px';
-  alert (txt);
+ 
    try {
    	console.log ('video tracks=',webcamStream.getVideoTracks().length);
       webcamStream.getVideoTracks().forEach(
         (track)=> {
         	track.applyConstraints({
         	width: container.clientWidth,
-        	height: container.clientHeight
+        	height: container.clientWidth
         });
     });
 
