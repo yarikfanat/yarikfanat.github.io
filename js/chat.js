@@ -606,6 +606,8 @@ function hangUpCall() {/*
   var head_chat = document.getElementById ('head_chat');
   var head_camera = document.getElementById ('head_camera');
   var headwrap = document.getElementById ('head');
+  var txt='width='+container.clientWidth+' height='+container.clientHeight;
+  alert(txt);
   /*
   var head_users = document.getElementById ('head_users');
   var userslist = document.getElementById ('userslist');
