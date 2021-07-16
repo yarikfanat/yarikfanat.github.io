@@ -5,7 +5,7 @@ var mediaConstraints = {
   video: {
   	
     aspectRatio: {
-      ideal: 1.0  
+      ideal: 1.33  
     }
   }
 };
@@ -633,7 +633,7 @@ function hangUpCall() {/*
   video_chat.style.height = '100%';
 
   video_chat.style.display = 'block';
-  mediaConstraints.video.aspectRatio.ideal = container.clientHeight/container.clientWidth;
+  mediaConstraints.video.aspectRatio.ideal = 1.0;
   console.log ('меняю aspectRatio на',mediaConstraints.video.aspectRatio.ideal);
   console.log ('высота области=',container.clientHeight,'px ширина области=',container.clientWidth,'px');
    try {
