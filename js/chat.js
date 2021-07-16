@@ -611,7 +611,7 @@ function hangUpCall() {/*
   headwrap.style.height='100%';
   head_camera.style.display = 'none';
   head_chat.style.display = 'none';
-  container,style.top = '0';
+  container.style.top = '0';
   container.style.height = '100%';
   container.style.width = '100%';
   container.style.zIndex = '6';
