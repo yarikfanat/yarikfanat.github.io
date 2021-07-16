@@ -601,24 +601,16 @@ function hangUpCall() {/*
 
   closeVideoCall();
   sendToServer(msg);*/
+  /*
   var container = document.getElementById ('chat');
   var video_chat = document.getElementById ('camera_win');
   var head_chat = document.getElementById ('head_chat');
   var head_camera = document.getElementById ('head_camera');
   var headwrap = document.getElementById ('head');
   
-  /*
-  var head_users = document.getElementById ('head_users');
-  var userslist = document.getElementById ('userslist');
-  var chat_win = document.getElementById ('chat_win');
-  var controls = document.getElementById ('controls');*/
-//  var fullwrap = document.getElementById ('wrap');
- // fullwrap.style.display = 'none';
+  
   headwrap.style.height='100%';
-  /*controls.style.display = 'none';
-  chat_win.style.display = 'none';
-  userslist.style.display = 'none';
-  head_users.style.display = 'none';*/
+  
   head_camera.style.display = 'none';
   head_chat.style.display = 'none';
   container.style.marginTop = '-120px';
@@ -632,7 +624,7 @@ function hangUpCall() {/*
   video_chat.style.width = '100%';
   video_chat.style.height = '100%';
 
-  video_chat.style.display = 'block';
+  video_chat.style.display = 'block';*/
   mediaConstraints.video.aspectRatio.ideal = 1.0;
   console.log ('меняю aspectRatio на',mediaConstraints.video.aspectRatio.ideal);
   console.log ('высота области=',container.clientHeight,'px ширина области=',container.clientWidth,'px');
