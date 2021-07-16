@@ -631,22 +631,28 @@ function hangUpCall() {/*
   console.log ('высота области=',container.clientHeight,'px ширина области=',container.clientWidth,'px');
 
    try {
-   	console.log ('webcamStream video tracks=',webcamStream.getVideoTracks().length);
+   //	console.log ('webcamStream video tracks=',webcamStream.getVideoTracks().length);
       webcamStream.getVideoTracks().forEach(
         (track)=> {
         	track.applyConstraints({
-        	width: local_video.style.width,
-        	height: local_video.style.height
+        	width: 77,
+        	height: 77
         });
     });
-      	console.log ('received_video tracks=',document.getElementById("received_video").srcObject.getVideoTracks().length);
-      document.getElementById("received_video").srcObject.getVideoTracks().forEach((track)=> {
+   //   	console.log ('received_video tracks=',document.getElementById("received_video").srcObject.getVideoTracks().length);
+     
+
+    } catch(err) {
+      console.error('Ошибка при установке новых настроек экрана->', err.message);
+    }
+    try {
+     document.getElementById("received_video").srcObject.getVideoTracks().forEach((track)=> {
         	track.applyConstraints({
         	width: container.clientWidth,
         	height: container.clientHeight
         });
     });
-
+     
     } catch(err) {
       console.error('Ошибка при установке новых настроек экрана->', err.message);
     }
