@@ -80,6 +80,11 @@
   	font-family: Arial;
 	border:2px solid rgb(229,229,229);
 }
+.full_screen {
+	position: absolute;
+	top: calc(100% - 50px);
+	left: calc(100% - 50px);
+}
 .camerabox {
 
 	position: relative;
