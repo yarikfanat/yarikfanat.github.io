@@ -236,7 +236,9 @@ function ChoiceChat(event) {
 	var video_chat,txt_chat,head_camera,head_chat,style,z_ind;
 	var styleElem,head_users,users_list,controls;
 	var container = document.getElementById ('chat');
-
+var received_video = document.getElementById ('received_video');
+vat txt='width='+received_video.clientWidth+'height='+received_video.clientHeight;
+alert (txt);
 	if (event.target.id=='head_chat')
 	{
 		txt_chat = document.getElementById ('chat_win');	
