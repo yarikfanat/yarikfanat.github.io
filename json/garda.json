@@ -1,35 +1,35 @@
 {
-	"photo_equip":[
-				   ["photo_equip/back/IMG_20201028_085252.jpg","photo_equip/back/IMG_20201028_085252.jpg"],
-				   ["photo_equip/back/IMG_20201028_085824.jpg","photo_equip/back/IMG_20201028_085824.jpg"],
-				   ["photo_equip/back/IMG_20201026_173358.jpg","photo_equip/back/goriz_richag_tyga.jpg"],
-				   ["photo_equip/back/IMG_20201030_162539.jpg","photo_equip/back/pull_back_barbell.jpg"],
-				   ["photo_equip/back/IMG_20201026_173157.jpg","photo_equip/back/IMG_20201028_085813.jpg"],
-				   ["photo_equip/abdominal/press_turnik.jpg","photo_equip/abdominal/IMG_20201028_085135.jpg"]
+	"src_video":[
+				   ["https://www.youtube.com/embed/hXyC9CGfvo4","https://www.youtube.com/embed/xv7gMobOzmU"],
+				   ["https://www.youtube.com/embed/vSMi1CEgweo","https://www.youtube.com/embed/poXUp3EF1Dw"],
+				   ["https://www.youtube.com/embed/wiFDIIe1Z1M","https://www.youtube.com/embed/vNrkKOiksCs"],
+				   ["https://www.youtube.com/embed/rUz7mPfvi48","https://www.youtube.com/embed/y6Y8WM_K8YY"],
+				   ["https://www.youtube.com/embed/wVNFyUNcwgU","https://www.youtube.com/embed/F2BZDFZEIQQ"],
+				   ["https://www.youtube.com/embed/BpBY08RLioM","https://www.youtube.com/embed/0NrOMts6pzc"]
 				  ],
 	"exercise_name":[
-					 ["Подтягивание в гравитроне широким хватом (противовес 130-140 фунтов)","Подтягивание в гравитроне параллельным хватом (противовес 130-140 фунтов)"],
-					 ["Вертикальная рычажная тяга широким хватом (вес 80-90 фунтов)","Вертикальная рычажная тяга параллельным хватом (вес 80-90 фунтов)"],
-					 ["Гоизонтальная рычажная тяга широким хватом (вес по 25кг(55 фунтов на каждую сторону))","Гоизонтальная рычажная тяга средним хватом (вес по 25кг(55 фунтов на каждую сторону))"],
-					 ["Тяга Т-грифа (вес 20кг(45 фунтов))","Тяга штанги средним хватом в наклоне (вес по 10-15кг (22-35фунтов) на каждую сторону)"],
-					 ["Гиперэкстензия с отягощением","Обратная гиперэкстензия в тренажере"],
-					 ["Подьемы ног в висе","Скручивания в тренажере для пресса"]
+					 ["Разгибание бедра сидя(вес 70-80 фунтов)","Жим ногами в горизонтальной платформе (вес 170 фунтов)"],
+					 ["Приседание до параллели со штангой на плечах (по 20кг или 45 фунтов) с каждой стороны","Приседания со штангой в станке Смитта(45-55 фунтов с каждой стороны)"],
+					 ["Жим ногами вверх в платформе (узкая постановка ног)вес-60кг или 135фунтов с каждой стороны","Выпады с гантелями по 12 кг(25фунтов) на месте"],
+					 ["Сгибатель бедра лежа на животе(120-130 фунтов)","Сгибатель бедра сидя (120 фунтов)"],
+					 ["Сведения ног в тренажере(100 фунтов)","Отведения ног в тренажере(90 фунтов)"],
+					 ["Подьемы на носки в тренажере(40 фунтов)","Подьем ног лежа на спине"]
 				  	],
-	"src_video":[
-				 ["https://www.youtube.com/embed/gkrrGaeukY4","https://www.youtube.com/embed/BOUrymgJk4s"],
-				 ["https://www.youtube.com/embed/ZLr25N9buQ8","https://www.youtube.com/embed/JxstfbStOMA"],
-				 ["https://www.youtube.com/embed/Bx8QSth84lI","https://www.youtube.com/embed/ipldDlIVcm4"],
-				 ["https://www.youtube.com/embed/3Yjr0ulB_YI","https://www.youtube.com/embed/mdSuEs6YQ48"],
-				 ["https://www.youtube.com/embed/ykGsGlXkEVg","https://www.youtube.com/embed/zTKVfUW0EIo"],
-				 ["https://www.youtube.com/embed/MLRvcj4dYeQ","https://www.youtube.com/embed/4wNi4keR_JE"]
+	"photo_equip":[
+				 ["photo_equip/legs/IMG_20201028_084549.jpg","photo_equip/legs/IMG_20201026_174911.jpg"],
+				 ["photo_equip/legs/prisedaniya-so-shtangoy.jpg","photo_equip/legs/prised_smit.jpg"],
+				 ["photo_equip/legs/zhim-nogami-foto.jpg","photo_equip/legs/vipad.jpg"],
+				 ["photo_equip/legs/biceps_bedra_lezha.jpg","photo_equip/legs/IMG_20201028_084538.jpg"],
+				 ["photo_equip/legs/svedenie-nog-v-trenazhere_4.jpg","photo_equip/legs/IMG_20201028_084354.jpg"],
+				 ["photo_equip/legs/golen-mashin.jpg","photo_equip/abdominal/press_na_skame.jpg"]
 				],
-	"superset":[false,false,false,false,false,false],
+	"superset":[false,false,false,false,true,true],
 	"circle":[false,false,false,false,false,false,false],
 	"details":[[{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
-			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
+			   [{"rounds":4,"reps":25},{"rounds":4,"reps":25}],
 			   [{"rounds":4,"reps":20},{"rounds":4,"reps":20}]
 		 	  ]
 }
