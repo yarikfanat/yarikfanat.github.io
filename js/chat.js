@@ -667,7 +667,7 @@ function applyAspectRatio () {
 	if (chat_win.style.display !='none' && camera_win.style.display !='none')
 	{
 		var received_video = document.getElementById ('received_video');
-		console.log ('Установка параметров <Receive видео> :width=',received_video.clientWidth,' height=',received_video.clientHeight,' для десктоп/планшет версии');
+		console.log ('Установка await параметров <Receive видео> :width=',received_video.clientWidth,' height=',received_video.clientHeight,' для десктоп/планшет версии');
 		try {
 			received_video.srcObject.getVideoTracks().forEach((track)=> {
 				await track.applyConstraints({
