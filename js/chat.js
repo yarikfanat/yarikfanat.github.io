@@ -670,7 +670,7 @@ async function applyAspectRatio () {
 		console.log ('Установка  параметров <Receive видео> :width=',received_video.clientWidth,' height=',received_video.clientHeight,' для десктоп/планшет версии');
 		try {
 			received_video.srcObject.getVideoTracks().forEach((track)=> {
-				 await track.applyConstraints({
+				 track.applyConstraints({
 				 width: received_video.clientWidth,
 				 height: received_video.clientHeight
 				});
