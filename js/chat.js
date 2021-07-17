@@ -660,17 +660,17 @@ function hangUpCall() {
     }
 }
 
-function applyAspectRatio () {
+async function applyAspectRatio () {
 	var chat_win = document.getElementById ('chat_win');
 	var camera_win = document.getElementById ('camera_win');
 
 	if (chat_win.style.display !='none' && camera_win.style.display !='none')
 	{
 		var received_video = document.getElementById ('received_video');
-		console.log ('Установка await параметров <Receive видео> :width=',received_video.clientWidth,' height=',received_video.clientHeight,' для десктоп/планшет версии');
+		console.log ('Установка  параметров <Receive видео> :width=',received_video.clientWidth,' height=',received_video.clientHeight,' для десктоп/планшет версии');
 		try {
 			received_video.srcObject.getVideoTracks().forEach((track)=> {
-				 track.applyConstraints({
+				 await track.applyConstraints({
 				 width: received_video.clientWidth,
 				 height: received_video.clientHeight
 				});
