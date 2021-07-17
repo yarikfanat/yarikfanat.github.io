@@ -236,9 +236,7 @@ function ChoiceChat(event) {
 	var video_chat,txt_chat,head_camera,head_chat,style,z_ind;
 	var styleElem,head_users,users_list,controls;
 	var container = document.getElementById ('chat');
-var received_video = document.getElementById ('received_video');
-var txt='width='+received_video.clientWidth+'height='+received_video.clientHeight;
-alert (txt);
+
 	if (event.target.id=='head_chat')
 	{
 		txt_chat = document.getElementById ('chat_win');	
@@ -669,7 +667,7 @@ async function applyAspectRatio () {
 	if (chat_win.style.display !='none' && camera_win.style.display !='none')
 	{
 		var received_video = document.getElementById ('received_video');
-		log ('Установка параметров Receive видео :width=',received_video.clientWidth,' height=',received_video.clientHeight,' для десктоп/планшет версии');
+		console.log ('Установка параметров <Receive видео> :width=',received_video.clientWidth,' height=',received_video.clientHeight,' для десктоп/планшет версии');
 		try {
 			received_video.srcObject.getVideoTracks().forEach((track)=> {
 				track.applyConstraints({
