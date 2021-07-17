@@ -456,6 +456,8 @@ function log_error(text) {
 
 function handleICEGatheringStateChangeEvent(event) {
   log("*** ICE gathering state changed to: " + myPeerConnection.iceGatheringState);
+  if (myPeerConnection.iceGatheringState=='complete')
+  	applyAspectRatio ();
 }
 
 function reportError(errMessage) {
@@ -656,4 +658,27 @@ function hangUpCall() {
     } catch(err) {
       console.error('Ошибка при установке новых настроек экрана->', err.message);
     }
+}
+
+async function applyAspectRatio () {
+	var chat_win = document.getElementById ('chat_win');
+	var camera_win = document.getElementById ('camera_win');
+
+	if (chat_win.style.display !='none' && camera_win.style.display !='none')
+	{
+		var received_video = document.getElementById ('received_video');
+		log ('Установка параметров Receive видео :width=',received_video.clientWidth,' height=',received_video.clientHeight,' для десктоп/планшет версии');
+		try {
+			received_video.srcObject.getVideoTracks().forEach((track)=> {
+				track.applyConstraints({
+					width: received_video.clientWidth,
+					height: received_video.clientHeight
+				});
+
+			});
+		} catch (err)
+		{
+			console.error('Ошибка при установке новых настроек экрана Receive видео->', err.message);
+		}
+	}
 }
