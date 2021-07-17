@@ -5,7 +5,7 @@ var mediaConstraints = {
   video: {
   	
     aspectRatio: {
-      ideal: 1.33  
+      ideal: 0.95 
     }
   }
 };
@@ -62,7 +62,7 @@ function connect() {
 	}
 //	serverUrl = scheme + "://" + myHostname + ":8080";
 
-	serverUrl = scheme+"://492a0c0853bf.ngrok.io"
+	serverUrl = scheme+"://0a3177abe962.ngrok.io"
 //    serverUrl = scheme+"://my-node-serverjs.appspot.com"
   	log(`Connecting to server: ${serverUrl}`);
 	webSocket = new WebSocket(serverUrl);
