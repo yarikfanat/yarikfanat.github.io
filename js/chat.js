@@ -5,7 +5,7 @@ var mediaConstraints = {
   video: {
   	
     aspectRatio: {
-      ideal: 0.95 
+      ideal: 1.0 
     }
   }
 };
@@ -592,7 +592,7 @@ function handleHangUpMsg(msg) {
   closeVideoCall();
 }
 
-function hangUpCall() {/*
+function hangUpCall() {
   var msg={
   	from_user: myUsername,
     target: target_user,
@@ -600,8 +600,8 @@ function hangUpCall() {/*
   };
 
   closeVideoCall();
-  sendToServer(msg);*/
-  
+  sendToServer(msg);
+  return;
  var container = document.getElementById ('chat');
  local_video = document.getElementById ('local_video');
  /*  var video_chat = document.getElementById ('camera_win');
