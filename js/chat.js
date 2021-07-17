@@ -457,7 +457,7 @@ function log_error(text) {
 function handleICEGatheringStateChangeEvent(event) {
   log("*** ICE gathering state changed to: " + myPeerConnection.iceGatheringState);
   if (myPeerConnection.iceGatheringState=='complete')
-  	 await applyAspectRatio ();
+  	  applyAspectRatio ();
 }
 
 function reportError(errMessage) {
@@ -660,7 +660,7 @@ function hangUpCall() {
     }
 }
 
-async function applyAspectRatio () {
+function applyAspectRatio () {
 	var chat_win = document.getElementById ('chat_win');
 	var camera_win = document.getElementById ('camera_win');
 
