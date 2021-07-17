@@ -9,7 +9,7 @@ var mediaConstraints = {
     }
   }
 };
-
+var full_screen = false;
 var myUsername = null;
 var myPeerConnection = null;    // RTCPeerConnection
 var transceiver = null;         // RTCRtpTransceiver
@@ -603,62 +603,70 @@ function hangUpCall() {
 
   closeVideoCall();
   sendToServer(msg);*/
-  applyAspectRatio();
-  return;
- var container = document.getElementById ('chat');
- local_video = document.getElementById ('local_video');
- /*  var video_chat = document.getElementById ('camera_win');
+  
+  var container = document.getElementById ('chat');
+  var received_video = document.getElementById ('received_video');
+  var video_chat = document.getElementById ('camera_win');
   var head_chat = document.getElementById ('head_chat');
   var head_camera = document.getElementById ('head_camera');
   var headwrap = document.getElementById ('head');
   
-  
-  headwrap.style.height='100%';
-  
-  head_camera.style.display = 'none';
-  head_chat.style.display = 'none';
-  container.style.marginTop = '-120px';
-  container.style.height = '100%';
-  container.style.width = '100%';
- // container.style.display = 'block';
-  container.style.zIndex = '6';
-  container.style.gridTemplateAreas = '"camerabox"';
-  container.style.gridTemplateRows = '1fr';
-  container.style.gridTemplateColumns = '1fr';
-  video_chat.style.width = '100%';
-  video_chat.style.height = '100%';
+  if (!full_screen)
+  {	
+  	  full_screen = true;
+	  headwrap.style.height='100%';
+	  
+	  head_camera.style.display = 'none';
+	  head_chat.style.display = 'none';
+	  container.style.marginTop = '-120px';
+	  container.style.height = '100%';
+	  container.style.width = '100%';
+	 // container.style.display = 'block';
+	  container.style.zIndex = '6';
+	  container.style.gridTemplateAreas = '"camerabox"';
+	  container.style.gridTemplateRows = '1fr';
+	  container.style.gridTemplateColumns = '1fr';
+	  video_chat.style.width = '100%';
+	  video_chat.style.height = '100%';
 
-  video_chat.style.display = 'block';*/
-  
-  console.log ('меняю aspectRatio на',mediaConstraints.video.aspectRatio.ideal);
-  console.log ('высота области=',container.clientHeight,'px ширина области=',container.clientWidth,'px');
+	  video_chat.style.display = 'block';
+	  
+	  console.log ('высота области=',container.clientHeight,'px ширина области=',container.clientWidth,'px');
 
-   try {
-   //	console.log ('webcamStream video tracks=',webcamStream.getVideoTracks().length);
-      webcamStream.getVideoTracks().forEach(
-        (track)=> {
-        	track.applyConstraints({
-        	width: 77,
-        	height: 77
-        });
-    });
-   //   	console.log ('received_video tracks=',document.getElementById("received_video").srcObject.getVideoTracks().length);
-     
+	    try {
+	    	received_video.srcObject.getVideoTracks().forEach((track)=> {
+	        	track.applyConstraints({
+	        	width: {ideal:received_video.clientHeight},
+	        	height:{ideal:received_video.clientWidth}
+	        });
+	    });
+	     
+	    } catch(err) {
+	      console.error('Ошибка при установке новых настроек экрана->', err.message);
+	    }
+	}else
+	{
+		full_screen = false;
+		headwrap.style.height='120px';
+		head_camera.style.display = 'block';
+	  	head_chat.style.display = 'block';
+	  	container.style.marginTop = '120px';
+	  	container.style.height = '380px';
+	  	container.style.zIndex = '2';
+		container.style.gridTemplateAreas = '"head-chat head-camera" "camerabox camerabox"'
+		container.style.gridTemplateRows = 'auto 1fr';
 
-    } catch(err) {
-      console.error('Ошибка при установке новых настроек экрана->', err.message);
-    }
-    try {
-     document.getElementById("received_video").srcObject.getVideoTracks().forEach((track)=> {
-        	track.applyConstraints({
-        	width: container.clientWidth,
-        	height: container.clientHeight
-        });
-    });
-     
-    } catch(err) {
-      console.error('Ошибка при установке новых настроек экрана->', err.message);
-    }
+		try  {
+			received_video.srcObject.getVideoTracks().forEach((track)=> {
+				track.applyConstraints({aspectRatio:1.0});
+
+			});
+
+		}
+		catch(err) {
+	      console.error('Ошибка при установке новых настроек экрана->', err.message);
+	    }
+	}
 }
 
 function applyAspectRatio () {
