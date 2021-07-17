@@ -658,7 +658,7 @@ function hangUpCall() {
 		container.style.gridTemplateColumns = '60% 1fr';
 		video_chat.style.width = '100%';
 	  	video_chat.style.height = '100%';
-	  	container.style.marginTop = '120px';
+	  	container.style.marginTop = '0px';
 
 		try  {
 			received_video.srcObject.getVideoTracks().forEach((track)=> {
