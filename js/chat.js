@@ -650,7 +650,7 @@ function hangUpCall() {
 		headwrap.style.height='120px';
 		head_camera.style.display = 'block';
 	  	head_chat.style.display = 'block';
-	  	container.style.marginTop = '80px';
+	  	container.style.marginTop = '60px';
 	  	container.style.height = '380px';
 	  	container.style.zIndex = '2';
 		container.style.gridTemplateAreas = '"head-chat head-camera" "camerabox camerabox"'
