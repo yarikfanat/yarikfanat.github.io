@@ -595,14 +595,15 @@ function handleHangUpMsg(msg) {
 }
 
 function hangUpCall() {
-  var msg={
+/*  var msg={
   	from_user: myUsername,
     target: target_user,
     type: "hang-up"
   };
 
   closeVideoCall();
-  sendToServer(msg);
+  sendToServer(msg);*/
+  applyAspectRatio();
   return;
  var container = document.getElementById ('chat');
  local_video = document.getElementById ('local_video');
