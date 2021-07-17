@@ -237,7 +237,7 @@ function ChoiceChat(event) {
 	var styleElem,head_users,users_list,controls;
 	var container = document.getElementById ('chat');
 var received_video = document.getElementById ('received_video');
-vat txt='width='+received_video.clientWidth+'height='+received_video.clientHeight;
+var txt='width='+received_video.clientWidth+'height='+received_video.clientHeight;
 alert (txt);
 	if (event.target.id=='head_chat')
 	{
