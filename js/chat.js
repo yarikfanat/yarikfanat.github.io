@@ -630,14 +630,15 @@ function hangUpCall() {
 	  video_chat.style.height = '100%';
 
 	  video_chat.style.display = 'block';
-	  
-	  console.log ('высота области=',container.clientHeight,'px ширина области=',container.clientWidth,'px');
+	  var msg='высота области='+received_video.clientHeight+'px ширина области='+received_video.clientWidth+'px';
+	  alert (msg);
+	  console.log ('высота области=',received_video.clientHeight,'px ширина области=',received_video.clientWidth,'px');
 
 	    try {
 	    	received_video.srcObject.getVideoTracks().forEach((track)=> {
 	        	track.applyConstraints({
-	        	width: {ideal:received_video.clientHeight},
-	        	height:{ideal:received_video.clientWidth}
+	        	width: {ideal:received_video.clientWidth},
+	        	height:{ideal:received_video.clientHeight}
 	        });
 	    });
 	     
@@ -655,7 +656,7 @@ function hangUpCall() {
 	  	container.style.zIndex = '2';
 		container.style.gridTemplateAreas = '"head-chat head-camera" "camerabox camerabox"'
 		container.style.gridTemplateRows = 'auto 1fr';
-		container.style.gridTemplateColumns = '60% 1fr';
+		container.style.gridTemplateColumns = '50% 1fr';
 		video_chat.style.width = '100%';
 	  	video_chat.style.height = '100%';
 	  	container.style.marginTop = '0px';
