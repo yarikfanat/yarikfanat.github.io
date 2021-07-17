@@ -81,6 +81,7 @@
 	border:2px solid rgb(229,229,229);
 }
 .full_screen {
+	display: none;
 	position: absolute;
 	top: calc(100% - 50px);
 	left: calc(100% - 50px);
@@ -210,6 +211,13 @@
 		"userslistbox userslistbox"
 		"chat_controls chat_controls";
 		grid-template-rows: auto 100px auto 80px 1fr;
+	}
+	.full_screen {
+		display: block;
+		width: 20px;
+		height: 20px;
+		top: calc(100%-22px);
+		left: calc(100%-22px);
 	}
 	.chat_controls {
 		margin-bottom: 5px;
