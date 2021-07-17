@@ -95,7 +95,7 @@
 }
 #local_video {
   width: 120px;
-  height:90px;
+  height:120px;
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -226,8 +226,8 @@
 		background: rgb(210,241,255); 
 	}
 	#local_video {
-		width: 80px;
-		height: 84px;
+		width: 77px;
+		height: 77px;
 	}
 	.chatbox {
 		margin-right: 1rem;
