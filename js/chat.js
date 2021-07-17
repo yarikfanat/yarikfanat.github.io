@@ -667,13 +667,21 @@ function applyAspectRatio () {
 
 	if (chat_win.style.display !='none' && camera_win.style.display !='none')
 	{
+		let supports = navigator.mediaDevices.getSupportedConstraints();
+		console.log ('supports contraints->',supports);
+		if (!supports["width"])
+		{
+			console.log ('getSupportedConstraints() :ограничение ["width"] не поддерживается ');
+			return ;
+		}
 		var received_video = document.getElementById ('received_video');
 		console.log ('Установка  параметров <Receive видео> :width=',received_video.clientWidth,' height=',received_video.clientHeight,' для десктоп/планшет версии');
 		try {
 			received_video.srcObject.getVideoTracks().forEach((track)=> {
 				 track.applyConstraints({
-				 width: received_video.clientWidth,
-				 height: received_video.clientHeight
+				 width: {ideal:received_video.clientWidth},
+				 height: {ideal:received_video.clientHeight},
+				 aspectRatio: 1.29
 				});
 
 			});
