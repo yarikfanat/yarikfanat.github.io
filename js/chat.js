@@ -457,7 +457,7 @@ function log_error(text) {
 function handleICEGatheringStateChangeEvent(event) {
   log("*** ICE gathering state changed to: " + myPeerConnection.iceGatheringState);
   if (myPeerConnection.iceGatheringState=='complete')
-  	 applyAspectRatio ();
+  	 await applyAspectRatio ();
 }
 
 function reportError(errMessage) {
