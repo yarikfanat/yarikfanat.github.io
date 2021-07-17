@@ -650,11 +650,12 @@ function hangUpCall() {
 		headwrap.style.height='120px';
 		head_camera.style.display = 'block';
 	  	head_chat.style.display = 'block';
-	  	container.style.marginTop = '120px';
+	  	container.style.top = '120px';
 	  	container.style.height = '380px';
 	  	container.style.zIndex = '2';
 		container.style.gridTemplateAreas = '"head-chat head-camera" "camerabox camerabox"'
 		container.style.gridTemplateRows = 'auto 1fr';
+		container.style.gridTemplateColumns = '60% 1fr';
 
 		try  {
 			received_video.srcObject.getVideoTracks().forEach((track)=> {
