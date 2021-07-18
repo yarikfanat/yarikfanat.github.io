@@ -80,7 +80,8 @@
   	font-family: Arial;
 	border:2px solid rgb(229,229,229);
 }
-.minimize_screen {
+
+.minimize_screen,.width_screen {
 	position: absolute;
 	display: none;
 }
@@ -231,6 +232,14 @@
 	}
 	.full_screen {
 		display: block;
+	}
+	.width_screen {
+		position: absolute;
+		width: 32px;
+		height: 28px;
+		top: 5px;
+		left: calc(100% - 50px);
+		cursor: pointer;
 	}
 	.minimize_screen {
 		display: none;
