@@ -595,21 +595,26 @@ function handleHangUpMsg(msg) {
 }
 
 function hangUpCall() {
-/*  var msg={
+ var msg={
   	from_user: myUsername,
     target: target_user,
     type: "hang-up"
   };
 
   closeVideoCall();
-  sendToServer(msg);*/
-  
+  sendToServer(msg);
+}
+
+function FullScreen () {
+
   var container = document.getElementById ('chat');
   var received_video = document.getElementById ('received_video');
   var video_chat = document.getElementById ('camera_win');
   var head_chat = document.getElementById ('head_chat');
   var head_camera = document.getElementById ('head_camera');
   var headwrap = document.getElementById ('head');
+  var full_scr = document.getElementById ('full_scr');
+  var min_scr = document.getElementById ('min_scr');
   
   if (!full_screen)
   {	
@@ -621,7 +626,7 @@ function hangUpCall() {
 	  container.style.marginTop = '-120px';
 	  container.style.height = '100%';
 	  container.style.width = '100%';
-	 // container.style.display = 'block';
+
 	  container.style.zIndex = '6';
 	  container.style.gridTemplateAreas = '"camerabox"';
 	  container.style.gridTemplateRows = '1fr';
@@ -630,8 +635,9 @@ function hangUpCall() {
 	  video_chat.style.height = '100%';
 
 	  video_chat.style.display = 'block';
-	  var msg='высота области='+received_video.clientHeight+'px ширина области='+received_video.clientWidth+'px';
-	  alert (msg);
+	  
+	  full_scr.style.display = 'none';
+	  min_scr.style.display = 'block';
 	  console.log ('высота области=',received_video.clientHeight,'px ширина области=',received_video.clientWidth,'px');
 
 	    try {
@@ -648,6 +654,8 @@ function hangUpCall() {
 	}else
 	{
 		full_screen = false;
+		full_scr.style.display = 'block';
+	  	min_scr.style.display = 'none';
 		headwrap.style.height='120px';
 		head_camera.style.display = 'block';
 	  	head_chat.style.display = 'block';
