@@ -81,6 +81,7 @@
 	border:2px solid rgb(229,229,229);
 }
 .minimize_screen {
+	position: absolute;
 	display: none;
 }
 .full_screen {
@@ -221,7 +222,7 @@
 	 	content: url(img/full_screen-48on.png);
 	}
 	.full_screen ,.minimize_screen{
-		
+		position: absolute;
 		width: 28px;
 		height: 28px;
 		top: calc(100% - 40px);
