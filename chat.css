@@ -230,7 +230,7 @@
 		left: calc(100% - 50px);
 		cursor: pointer;
 	}
-	.full_screen {
+	.full_screen,.width_screen {
 		display: block;
 	}
 	.width_screen {
