@@ -605,7 +605,7 @@ function hangUpCall() {
   sendToServer(msg);
 }
 
-function WidthScreen {
+function WidthScreen () {
 	if (full_screen)
 	{
 		var received_video = document.getElementById ('received_video');
