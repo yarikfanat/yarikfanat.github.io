@@ -605,6 +605,24 @@ function hangUpCall() {
   sendToServer(msg);
 }
 
+function WidthScreen {
+	if (full_screen)
+	{
+		var received_video = document.getElementById ('received_video');
+		try {
+	    	received_video.srcObject.getVideoTracks().forEach((track)=> {
+	        	track.applyConstraints({
+	        	width: {ideal:received_video.clientWidth},
+	        	height:{ideal:received_video.clientHeight}
+	        });
+	    });
+	     
+	    } catch(err) {
+	      console.error('Ошибка при установке новых настроек экрана->', err.message);
+	    }
+	}
+}
+
 function FullScreen () {
 
   var container = document.getElementById ('chat');
