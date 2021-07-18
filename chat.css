@@ -80,6 +80,9 @@
   	font-family: Arial;
 	border:2px solid rgb(229,229,229);
 }
+.minimize_screen {
+	display: none;
+}
 .full_screen {
 	display: none;
 	position: absolute;
