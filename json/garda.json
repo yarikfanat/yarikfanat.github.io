@@ -1,0 +1,35 @@
+{
+	"src_video":[
+				   ["https://www.youtube.com/embed/wj2Ww8NWilQ","https://www.youtube.com/embed/Ch4UZW_j08Q"],
+				   ["https://www.youtube.com/embed/gkrrGaeukY4","https://www.youtube.com/embed/onSbWiRdOYg"],
+				   ["https://www.youtube.com/embed/ykGsGlXkEVg","https://www.youtube.com/embed/zTKVfUW0EIo"],
+				   ["https://www.youtube.com/embed/R0RyxO58XuM","https://www.youtube.com/embed/mXdyLcQ_VZU"],
+				   ["https://www.youtube.com/embed/fMcFLCGKh04","https://www.youtube.com/embed/QaJcczm4uZU"],
+				   ["https://www.youtube.com/embed/54rGQNDT8ZA","https://www.youtube.com/embed/MLRvcj4dYeQ"]
+				  ],
+	"exercise_name":[
+					 ["Тяга штанги в наклоне к поясу","Тяга гантели в наклоне к поясу"],
+					 ["Подтягивание в гравитроне широким хватом","Тяга вертикального блока к груди"],
+					 ["Гиперэкстензия с отягощением","Обратная гиперэкстензия в тренажере"],
+					 ["Жим штанги лежа на горизонтальной скамье в станке Смитта (вес по 10-12кг(20-25 фунтов) с каждой стороны)","жим гантелей по 12-14кг лежа на горизонтальной скамье"],
+					 ["Грудь-машина - сведения рук 90-100 фунтов","Разведение гантелей 12 кг(25 фунтов) лежа на горизонтальной скамье"],
+					 ["Планка горизонтальная на локтях","Подьемы ног в висе на турнике"]
+				  	],
+	"photo_equip":[
+				 ["photo_equip/back/pull_back_barbell.jpg","photo_equipback/pull_back_dumbell.png"],
+				 ["photo_equip/back/IMG_20201028_085252.jpg","photo_equip/back/vert_tyga_shirok_hvatom.jpg"],
+				 ["photo_equip/back/IMG_20201026_173157.jpg","photo_equip/back/IMG_20201028_085813.jpg"],
+				 ["photo_equip/chest/Smith-Machine-Bench-Press.jpg","photo_equip/chest/zhim_gantel_na_gorizont.jpg"],
+				 ["photo_equip/chest/svedenie-ruk-na-grud-v-trenazhere-babochka.jpg","photo_equip/chest/razvedenie-ruk-lezha.jpg"],
+				 ["photo_equip/abdominal/planka.png","photo_equip/abdominal/press_turnik.jpg"]
+				],
+	"superset":[false,false,false,false,false,true],
+	"circle":[false,false,false,false,false,false,false],
+	"details":[[{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
+			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
+			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
+			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
+			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
+			   [{"rounds":4,"reps":"30сек-1минута"},{"rounds":4,"reps":15}]
+		 	  ]
+}
