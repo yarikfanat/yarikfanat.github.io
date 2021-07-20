@@ -3,21 +3,21 @@
   		           ["photo_equip/legs/vipad.jpg","photo_equip/legs/zhim_nogami_shiroko.jpg"],
   		           ["photo_equip/legs/otvedenie-nogi-v-krossovere.jpg","photo_equip/back/vert_tyga_shirok_hvatom.jpg"],
   		           ["photo_equip/back/IMG_20201028_085813.jpg","photo_equip/back/IMG_20201028_085938.jpg"],
-         	       ["photo_equip/abdominal/planka.png"]
+         	       ["photo_equip/abdominal/planka.png","photo_equip/abdominal/press_na_skame.jpg"]
          	      ],
 	"exercise_name":[["Жим ногами вверх в платформе (узкая постановка ног)","Гиперэкстензия"],
 					 ["Выпады с гантелями по 3-4 кг на месте","Жим ногами вверх в платформе (верхняя широкая постановка ног)"],
 					 ["Отведение ноги назад в нижнем блоке на ягодицы","Тяга вертикального блока к груди"],
 					 ["Обратная гиперэкстензия в тренажере","Горизонтальная тяга блока"],
-					 ["Планка горизонтальная на локтях"]
+					 ["Планка горизонтальная на локтях","Подьемы ног лежа на спине"]
 					],
 	"src_video":[["https://www.youtube.com/embed/wiFDIIe1Z1M","https://www.youtube.com/embed/ykGsGlXkEVg"],
             	 ["https://www.youtube.com/embed/vNrkKOiksCs","https://www.youtube.com/embed/4HKfXKbYIX4"],
             	 ["https://www.youtube.com/embed/25CMbxYgvV4","https://www.youtube.com/embed/onSbWiRdOYg"],
             	 ["https://www.youtube.com/embed/zTKVfUW0EIo","https://www.youtube.com/embed/cWpH5GiBmKA"],
-            	 ["https://www.youtube.com/embed/54rGQNDT8ZA"]
+            	 ["https://www.youtube.com/embed/54rGQNDT8ZA","https://www.youtube.com/embed/0NrOMts6pzc"]
             	],
-	"superset":[true,false,true,true,false],
+	"superset":[true,false,true,true,true],
 	"circle":[false,false,false,false,false],
 	"details":[[{"rounds":4,"reps":20},{"rounds":4,"reps":20}],
 			   [{"rounds":4,"reps":12},{"rounds":4,"reps":20}],
