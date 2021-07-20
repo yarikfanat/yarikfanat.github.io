@@ -23,6 +23,6 @@
 			   [{"rounds":4,"reps":12},{"rounds":4,"reps":20}],
 			   [{"rounds":4,"reps":20},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":25},{"rounds":4,"reps":15}],
-			   [{"rounds":4,"reps":"1минута"}]
+			   [{"rounds":4,"reps":"1минута"},{"rounds":4,"reps":15}]
 		 	  ]
 }
