@@ -1,35 +1,35 @@
 {
 	"photo_equip":[
-				   ["photo_equip/back/IMG_20201028_085252.jpg","photo_equip/back/IMG_20201028_085252.jpg"],
-				   ["photo_equip/back/IMG_20201028_085824.jpg","photo_equip/back/IMG_20201028_085824.jpg"],
-				   ["photo_equip/back/IMG_20201026_173358.jpg","photo_equip/back/goriz_richag_tyga.jpg"],
-				   ["photo_equip/back/IMG_20201030_162539.jpg","photo_equip/back/pull_back_barbell.jpg"],
-				   ["photo_equip/back/IMG_20201026_173157.jpg","photo_equip/back/IMG_20201028_085813.jpg"],
-				   ["photo_equip/abdominal/press_turnik.jpg","photo_equip/abdominal/IMG_20201028_085135.jpg"]
+				   ["photo_equip/chest/IMG_20201030_162454.jpg","photo_equip/chest/zhim-gantelej-lezha-na-skame-pod-uglom-35.jpg"],
+				   ["photo_equip/chest/Smith-Machine-Bench-Press.jpg","photo_equip/chest/zhim_gantel_na_gorizont.jpg"],
+				   ["photo_equip/chest/svedenie-ruk-na-grud-v-trenazhere-babochka.jpg","photo_equip/chest/razvedenie-ruk-lezha.jpg"],
+				   ["photo_equip/chest/IMG_20201028_085252.jpg","photo_equip/chest/IMG_20201030_162503.jpg"],
+				   ["photo_equip/chest/pulover.jpg","photo_equip/chest/IMG_20201030_162545.jpg"],
+				   ["photo_equip/abdominal/planka.png","photo_equip/abdominal/press_turnik.jpg"]
 				  ],
 	"exercise_name":[
-					 ["Подтягивание в гравитроне широким хватом (противовес 130-140 фунтов)","Подтягивание в гравитроне параллельным хватом (противовес 130-140 фунтов)"],
-					 ["Вертикальная рычажная тяга широким хватом (вес 60-80 фунтов)","Вертикальная рычажная тяга параллельным хватом (вес 60-80 фунтов)"],
-					 ["Гоизонтальная рычажная тяга широким хватом (вес по 15кг(30 фунтов на каждую сторону))","Гоизонтальная рычажная тяга средним хватом (вес по 15кг(30 фунтов на каждую сторону))"],
-					 ["Тяга Т-грифа (вес 5-10кг(10-20 фунтов))","Тяга штанги средним хватом в наклоне (вес по 2,5-5кг (5-10фунтов) на каждую сторону)"],
-					 ["Гиперэкстензия с отягощением","Обратная гиперэкстензия в тренажере"],
-					 ["Подьемы ног в висе","Скручивания в тренажере для пресса"]
+					 ["Жим лежа под наклоном в тренажере (широкий хват)","жим гантелей по 12-14кг лежа на скамье под углом 35градусов"],
+					 ["Жим штанги лежа на горизонтальной скамье в станке Смитта (вес по 10-12кг(20-25 фунтов) с каждой стороны)","жим гантелей по 12-14кг лежа на горизонтальной скамье"],
+					 ["Грудь-машина - сведения рук","Разведение гантелей 10-12 кг(25 фунтов) лежа на горизонтальной скамье"],
+					 ["Отжимания на брусьях в гравитроне","Жим в трицепс-машине"],
+					 ["Пуловер с гантелью 12 кг(40 фунтов) лежа на горизонтальной скамье","Пуловер сидя в пуловер-машине"],
+					 ["Планка горизонтальная на локтях","Подьемы ног в висе на турнике"]
 				  	],
 	"src_video":[
-				 ["https://www.youtube.com/embed/gkrrGaeukY4","https://www.youtube.com/embed/BOUrymgJk4s"],
-				 ["https://www.youtube.com/embed/ZLr25N9buQ8","https://www.youtube.com/embed/JxstfbStOMA"],
-				 ["https://www.youtube.com/embed/Bx8QSth84lI","https://www.youtube.com/embed/ipldDlIVcm4"],
-				 ["https://www.youtube.com/embed/3Yjr0ulB_YI","https://www.youtube.com/embed/mdSuEs6YQ48"],
-				 ["https://www.youtube.com/embed/ykGsGlXkEVg","https://www.youtube.com/embed/zTKVfUW0EIo"],
-				 ["https://www.youtube.com/embed/MLRvcj4dYeQ","https://www.youtube.com/embed/4wNi4keR_JE"]
+				 ["https://www.youtube.com/embed/tzo69SUAm04","https://www.youtube.com/embed/MaxvcRh8ZII"],
+				 ["https://www.youtube.com/embed/R0RyxO58XuM","https://www.youtube.com/embed/mXdyLcQ_VZU"],
+				 ["https://www.youtube.com/embed/fMcFLCGKh04","https://www.youtube.com/embed/QaJcczm4uZU"],
+				 ["https://www.youtube.com/embed/pSlfgn0nW4w","https://www.youtube.com/embed/gPE0-KLc5zQ"],
+				 ["https://www.youtube.com/embed/UTurBQ0YAu8","https://www.youtube.com/embed/5XjZ4D2tMrc"],
+				 ["https://www.youtube.com/embed/54rGQNDT8ZA","https://www.youtube.com/embed/MLRvcj4dYeQ"]
 				],
-	"superset":[false,false,false,false,false,false],
+	"superset":[false,false,false,false,false,true],
 	"circle":[false,false,false,false,false,false,false],
 	"details":[[{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
-			   [{"rounds":4,"reps":20},{"rounds":4,"reps":20}]
+			   [{"rounds":4,"reps":"1минута"},{"rounds":4,"reps":15}]
 		 	  ]
 }
