@@ -67,15 +67,18 @@
 	position: absolute;
 	top: 50%;
 	left: 17%;
-	margin-left: -48px;
-	margin-top: -48px;
 	z-index: 5;
+	margin-top: -36px;
+	margin-left: -36px;
+/*	content: url(../img/webcam72_off.png);*/
+	width: 72px;
+	height: 72px;
+	cursor: pointer;
 }
+	/*
 .webrtc:hover {
-	 content: url(../img/webcam96_on.png);
-	 cursor: pointer;
-
-}
+	content: url(../img/webcam72_on.png);
+}*/
 .photo_dumbells2 {
 	position: absolute;
 	width: 35%;
@@ -337,17 +340,7 @@
 		left: 1%;
 		top: 18%;
 	}
-	.webrtc {
-		margin-top: -36px;
-		margin-left: -36px;
-		content: url(img/webcam72_off.png);
-		width: 72px;
-		height: 72px;
-	}
-	.webrtc:hover {
-		content: url(img/webcam72_on.png);
-
-	}
+	
 	.video_player {
 		width: 100%;
 		margin: 0;
