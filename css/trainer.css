@@ -63,6 +63,27 @@
 	background-image: url(../img/dumbells1.jpg);
 	z-index: 5;
 }
+.container_webcam, .container_webcam_on {
+	position: absolute;
+	z-index: 5;
+	width: 72px;
+	height: 72px;
+	top: 50%;
+	left: 17%;
+	margin-top: -36px;
+	margin-left: -36px;
+	cursor: pointer;
+	background-image: url(../img/webcam72_off.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.container_webcam:hover {
+	background-image: url(../img/webcam72_on.png);
+}
+.container_webcam_on {
+	background-image: url(../img/webcam72_on.png);
+}
 .webrtc {
 	position: absolute;
 	top: 50%;
