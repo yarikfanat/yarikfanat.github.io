@@ -361,6 +361,9 @@
 		left: 1%;
 		top: 18%;
 	}
+	.container_webcam, .container_webcam_on {
+		background-size: 70%;
+	}
 	
 	.video_player {
 		width: 100%;
