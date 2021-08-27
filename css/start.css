@@ -32,12 +32,12 @@ html, body {
 	width: 45%;
 	text-align: right;
 	float: left;
-	left: -100%;
+/*	left: -100%;*/
 }
 .name_head2 {
 	position: relative;
 	width: 45%;
-	left: 100%;
+/*	left: 100%;*/
 	text-align: left;
 	float: right;
 }
@@ -50,6 +50,86 @@ html, body {
   	font-family: Arial;
   	font-style: italic;
   	color: rgb(81,81,255);
+}
+.modal {
+	z-index: 999;
+	position: fixed;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(158,158,158,0.4);
+}
+.msg_box,.msg_box1 {
+	position: absolute;	
+	display: flex;
+	border:2px solid rgb(0,128,192);
+	border-radius: 10px;
+	flex-direction: column;
+	width: 300px;
+	background: rgba(140,140,255,0.8);	
+	font-family: Arial;
+	font-size: 20px;
+	line-height: 30px;
+	font-style: italic;
+	font-weight: bold;
+	cursor: default;
+}
+.msg_box {
+	left:50%;
+	margin-left: -150px;
+	top: 50%;
+	margin-top: -130px;
+}
+.upper_panel {
+	width: 98%;
+	margin-left: 1%;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	padding: 7px;
+	background: rgb(0,0,160);
+	border:1px solid rgb(215,215,255);
+	cursor: move;
+}
+.container_text {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	padding: 20px;
+	text-align: center;
+	color: rgb(0,0,81);
+}
+.container_button {
+	text-align: center;
+}
+.container_buttons,.container_button {
+	width: 60%;
+	margin-left: 20%;
+	margin-bottom: 20px;
+	color: rgb(215,215,255);
+}
+.container_buttons > button,.container_button > button {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border:1px solid rgb(215,215,255);
+	background: rgb(66,66,255);
+	cursor: pointer;
+	border-radius: 5px;
+}
+.container_buttons > button:hover,.container_button > button:hover {
+	background: rgb(136,136,255);
+}
+.button_yes {
+	display: block;
+	float: left;
+}
+.button_no {
+	display: block;
+	float: right;
 }
 .animation_name_head1 {
 	-webkit-animation-name: anime_name_first; 
