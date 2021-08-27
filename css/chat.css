@@ -14,8 +14,7 @@
 	 border:3px solid rgb(229,229,229);
 }
 .chat_container {
-/*	 top: -52%;*/
-	top: -100%;
+	 top: -52%;
 }
 .chat_container_restore {	
 	 top: 24%;	
@@ -34,8 +33,7 @@
 	 border:3px solid rgb(229,229,229);
 }
 .videochat_container {
-/*	 top: -52%;*/
-	 top:-100%;
+	 top: -52%;
 }
 .videochat_container_restore {	
 	 top: 24%;
@@ -280,24 +278,20 @@ input[id='text_chat'] {
 	animation-name: chat_hide;
 }
 @-webkit-keyframes chat_show {
- /*   from {top: -52%;}*/
- 	from {top: -100%;}
+    from {top: -52%;}
     to {top: 24%;}
 }
 @keyframes chat_show {
-    /*   from {top: -52%;}*/
- 	from {top: -100%;}
+    from {top: -52%;}
     to {top: 24%;}
 }
 @-webkit-keyframes chat_hide {
     from {top: 24%;}
-    to {top: -100%;}
-  /*  to {top: -52%;}*/
+    to {top: -52%;}
 }
 @keyframes chat_hide {
     from {top: 24%;}
-    to {top: -100%;}
-  /*  to {top: -52%;}*/
+    to {top: -52%;}
 }
 
 @media only screen and (max-width: 1600px) {
@@ -393,8 +387,7 @@ input[id='text_chat'] {
 	.chat_container,.videochat_container {
 		width: 98%;
 		height: 82%;
-	/*	top: -76%;*/
-		top: -100%;
+		top: -76%;
 		font-size: 12px;
 		
 	}
@@ -408,23 +401,19 @@ input[id='text_chat'] {
 		font-size: 12px;
 	}
 	@-webkit-keyframes chat_show {
-		/*from {top: -76%;}*/
-		from {top: -100%;}
+		from {top: -76%;}
 	    to {top: 18%;}
 	}
 	@keyframes chat_show {
-	    /*from {top: -76%;}*/
-		from {top: -100%;}
+	    from {top: -76%;}
 	    to {top: 18%;}
 	}
 	@-webkit-keyframes chat_hide {
 	    from {top: 18%;}
-	    to {top: -100%;}
-	 /*   to {top: -76%;}*/
+	    to {top: -76%;}
 	}
 	@keyframes chat_hide {
 	    from {top: 18%;}
-	    to {top: -100%;}
-	 /*   to {top: -76%;}*/
+	    to {top: -76%;}
 	}
 }
