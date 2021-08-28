@@ -68,6 +68,7 @@
 	z-index: 5;
 	width: 72px;
 	height: 72px;
+	height: 72px;
 	top: 50%;
 	left: 17%;
 	margin-top: -36px;
@@ -84,22 +85,51 @@
 .container_webcam_on {
 	background-image: url(../img/webcam72_on.png);
 }
-.webrtc {
-	position: absolute;
-	top: 50%;
-	left: 17%;
-	z-index: 5;
-	margin-top: -36px;
-	margin-left: -36px;
-/*	content: url(../img/webcam72_off.png);*/
-	width: 72px;
-	height: 72px;
-	cursor: pointer;
+.weight {
+	position: fixed;
+	width: 200px;
+	height: 150px;
+	background: rgba(0,64,128,0.9);
+	z-index: 1;
+	border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
 }
-	/*
-.webrtc:hover {
-	content: url(../img/webcam72_on.png);
-}*/
+.weight:before { 
+	content: ' '; 
+	position: absolute; 
+	width: 70px; 
+	height: 40px; 
+	background: transparent;
+	border: 30px solid rgba(0,64,128,0.9);
+	left: 35px;
+	top: -68px;
+    border-radius: 45px;
+    border-bottom-left-radius: 75px;
+    border-bottom-width: 0px;
+    border-bottom-right-radius: 75px;
+}
+.weight_text {
+	position: absolute;
+	width: 160px;
+	height: 110px;
+	left: 20px;
+	top: 20px;
+	text-align: center;
+	padding: 20px;
+	font-family: Arial;
+	font-size: 14px;
+	font-style: italic;
+	color: white;
+	background: rgb(0,72,145);
+	border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+	border: 2px solid rgb(0,66,132);
+	overflow: hidden;
+}
 .photo_dumbells2 {
 	position: absolute;
 	width: 35%;
