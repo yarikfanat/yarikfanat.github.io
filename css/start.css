@@ -4,12 +4,27 @@
 }
 html, body {
   	background: rgb(108,108,108);
- 	
+ 	height: 100%;
 }
 #logon {
 	display: block;
 	width: 100%;
-	
+	height: 100%;	
+}
+.back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/dumbells1.jpg);
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.logon_container {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	/*height: 100%;	*/
+	flex-direction: column;
 }
 .bgstart {
 	position: absolute;
@@ -20,7 +35,6 @@ html, body {
 }
 .name_head {
   	position: relative;
-	top: 20px;
 	left: 25%;
 	width: 50%;
 	margin: 0;
@@ -139,7 +153,7 @@ html, body {
 	-webkit-animation-name: anime_name_second; 
 	animation-name: anime_name_second;
 }
-.animation_name_head1,.animation_name_head2 {
+.animation_name_head1,.animation_name_head2,.animation_clip1,.animation_clip2,.animation_clip3,.animation_clip4,.animation_clip5,.animation_clip6 {
 	
 	animation-delay: 1s;
     -webkit-animation-delay: 1s;
@@ -166,6 +180,79 @@ html, body {
     from {left: 100%;}
     to {left: 0px;}
 }
+
+.animation_clip1 {
+	-webkit-animation-name: anime_clip_one; 
+	animation-name: anime_clip_one;
+}
+.animation_clip2 {
+	-webkit-animation-name: anime_clip_two; 
+	animation-name: anime_clip_two;
+}
+.animation_clip3 {
+	-webkit-animation-name: anime_clip_three; 
+	animation-name: anime_clip_three;
+}
+.animation_clip4 {
+	-webkit-animation-name: anime_clip_foor; 
+	animation-name: anime_clip_foor;
+}
+.animation_clip5 {
+	-webkit-animation-name: anime_clip_five; 
+	animation-name: anime_clip_five;
+}
+.animation_clip6 {
+	-webkit-animation-name: anime_clip_six; 
+	animation-name: anime_clip_six;
+}
+@keyframes anime_clip_one {
+    from {left: 1%;}
+    to {left: -19%;}
+}
+@-webkit-keyframes anime_clip_one {
+    from {left: 1%;}
+    to {left: -19%;}
+}
+@keyframes anime_clip_two {
+    from {left: 21%;}
+    to {left: 1%;}
+}
+@-webkit-keyframes anime_clip_two {
+    from {left: 21%;}
+    to {left: 1%;}
+}
+@keyframes anime_clip_three {
+    from {left: 41%;}
+    to {left: 21%;}
+}
+@-webkit-keyframes anime_clip_three {
+    from {left: 41%;}
+    to {left: 21%;}
+}
+@keyframes anime_clip_foor {
+    from {left: 61%;}
+    to {left: 41%;}
+}
+@-webkit-keyframes anime_clip_foor {
+    from {left: 61%;}
+    to {left: 41%;}
+}
+@keyframes anime_clip_five {
+    from {left: 81%;}
+    to {left: 61%;}
+}
+@-webkit-keyframes anime_clip_five {
+    from {left: 81%;}
+    to {left: 61%;}
+}
+@keyframes anime_clip_six {
+    from {left: 101%;}
+    to {left: 81%;}
+}
+@-webkit-keyframes anime_clip_six {
+    from {left: 101%;}
+    to {left: 81%;}
+}
 .frame {
 	position: relative;	
 	display: block;
@@ -173,8 +260,65 @@ html, body {
 	height: auto;
 /*	margin: 200px auto;*/
 	margin: 50px auto;
+	margin-bottom: 0;
     border: 2px solid blue;
 }
+.video_block {
+	position: relative;
+	width: 90%;
+	margin-left: 5%;	
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	height: 180px;
+	background:  rgb(0,97,193);
+}
+.video_img {
+	position: absolute;
+	display: block;
+	height:auto;
+}
+.lenta,.lenta2 {
+	display: flex;
+	position: relative;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 10px;
+	height: 30px;
+	align-items: center;
+	background: transparent;
+}
+.lenta2 {
+	margin-top: 0;
+}
+.lenta_win {
+	width: 3%;
+    height: 30px;
+    background: transparent;
+    border: 10px solid rgb(0,97,193);
+}
+.clip1,.clip2,.clip3,.clip4,.clip5,.clip6 {
+	width: 18%;
+}
+.clip1 {
+	left: 1%;
+}
+.clip2 {
+	left: 21%;
+}
+.clip3 {
+	left: 41%;
+}
+.clip4 {
+	left: 61%;
+}
+.clip5 {
+	left: 81%;
+}
+.clip6 {
+	left: 101%;
+}
+
 .my_logo {
 	position: absolute;
 	left: 10px;
@@ -231,48 +375,441 @@ input[id='btn'] {
 @media only screen and (max-width: 1400px) {
 	.frame {
 		width: 50%;
-		margin: 10% auto;
+/*		margin: 10% auto;*/
+	}
+	.video_block {
+		height: 150px;
 	}
 	.name_head {
 		width: 70%;
 		left: 15%;
 	}
+	.name_head div {
+		font-size: 30px;
+	}
 }
 @media only screen and (max-width: 1100px) {
 	.frame {
 		width: 70%;
+		margin-top:10px;
 	}
-	.name_head {
-		width: 100%;
-		left: 0px;
+	.lenta,.lenta2 {
+		height: 25px;
 	}
-	.name_head div {
-		width: 100%;
-		text-align: center;
+	.lenta_win {
+	    height: 25px;
+	    border: 6px solid rgb(0,97,193);
+	}
+	.clip1,.clip2,.clip3,.clip4,.clip5,.clip6 {
+		width: 23%;
+	}
+	.clip1 {
+		left: 1%;
+	}
+	.clip2 {
+		left: 26%;
+	}
+	.clip3 {
+		left: 51%;
+	}
+	.clip4 {
+		left: 76%;
+	}
+	.clip5 {
+		left: 101%;
+	}
+	.clip6 {
+		left: 126%;
+	}
+
+	@keyframes anime_clip_one {
+	    from {left: 1%;}
+	    to {left: -24%;}
+	}
+	@-webkit-keyframes anime_clip_one {
+	    from {left: 1%;}
+	    to {left: -24%;}
+	}
+	@keyframes anime_clip_two {
+	    from {left: 26%;}
+	    to {left: 1%;}
+	}
+	@-webkit-keyframes anime_clip_two {
+	    from {left: 26%;}
+	    to {left: 1%;}
+	}
+	@keyframes anime_clip_three {
+	    from {left: 51%;}
+	    to {left: 26%;}
+	}
+	@-webkit-keyframes anime_clip_three {
+	    from {left: 51%;}
+	    to {left: 26%;}
+	}
+	@keyframes anime_clip_foor {
+	    from {left: 76%;}
+	    to {left: 51%;}
+	}
+	@-webkit-keyframes anime_clip_foor {
+	    from {left: 76%;}
+	    to {left: 51%;}
+	}
+	@keyframes anime_clip_five {
+	    from {left: 101%;}
+	    to {left: 76%;}
+	}
+	@-webkit-keyframes anime_clip_five {
+	    from {left: 101%;}
+	    to {left: 76%;}
+	}
+	@keyframes anime_clip_six {
+	    from {left: 126%;}
+	    to {left: 101%;}
+	}
+	@-webkit-keyframes anime_clip_six {
+	    from {left: 126%;}
+	    to {left: 101%;}
+	}
+	.my_logo {
+		font-size: 14px;
+	}
+	p, span {
+		font-size: 14px;
+	}
+	.input_block {
+    	top: 25%;
 	}
 }
 @media only screen and (max-width: 900px) {
 	.frame {
 		width: 80%;
 	}
-	.input_block {
-		top: 25%;
+	.video_block {
+		height: 140px;
+	}
+	.clip1,.clip2,.clip3,.clip4,.clip5,.clip6 {
+		width: 32%;
+	}
+	.clip1 {
+		left: 1%;
+	}
+	.clip2 {
+		left: 34%;
+	}
+	.clip3 {
+		left: 67%;
+	}
+	.clip4 {
+		left: 100%;
+	}
+	.clip5 {
+		left: 133%;
+	}
+	.clip6 {
+		left: 166%;
+	}
+	@keyframes anime_clip_one {
+	    from {left: 1%;}
+	    to {left: -32%;}
+	}
+	@-webkit-keyframes anime_clip_one {
+	    from {left: 1%;}
+	    to {left: -32%;}
+	}
+	@keyframes anime_clip_two {
+	    from {left: 34%;}
+	    to {left: 1%;}
+	}
+	@-webkit-keyframes anime_clip_two {
+	    from {left: 34%;}
+	    to {left: 1%;}
+	}
+	@keyframes anime_clip_three {
+	    from {left: 67%;}
+	    to {left: 34%;}
+	}
+	@-webkit-keyframes anime_clip_three {
+	    from {left: 67%;}
+	    to {left: 34%;}
+	}
+	@keyframes anime_clip_foor {
+	    from {left: 100%;}
+	    to {left: 67%;}
+	}
+	@-webkit-keyframes anime_clip_foor {
+	    from {left: 100%;}
+	    to {left: 67%;}
+	}
+	@keyframes anime_clip_five {
+	    from {left: 133%;}
+	    to {left: 100%;}
+	}
+	@-webkit-keyframes anime_clip_five {
+	    from {left: 133%;}
+	    to {left: 100%;}
+	}
+	@keyframes anime_clip_six {
+	    from {left: 166%;}
+	    to {left: 133%;}
+	}
+	@-webkit-keyframes anime_clip_six {
+	    from {left: 166%;}
+	    to {left: 133%;}
+	}
+}
+@media only screen and (max-width: 800px) {
+	.lenta,.lenta2 {
+		height: 15px;
+	}
+	.lenta_win {
+	    height: 15px;
+	    border: 4px solid rgb(0,97,193);
 	}
 }
 @media only screen and (max-width: 600px) {
+	.name_head div {
+		width: 48%;
+		font-size: 20px;
+	}
+	.name_head {
+		margin-bottom: 5px;
+	}
+	.name_head1 {
+		text-align: right;
+	}
+	.name_head2 {
+		text-align: left;
+	}
 	.frame {
 		width: 100%;
-		margin: 30px auto;
-	}
+		margin: 5px auto;
+		margin-bottom: 0;
+	} 
 	.input_block {
 		width: 70%;
 		left: 15%;
 	}
-	.name_head div {
-		font-size: 40px;
+	.clip1,.clip2,.clip3,.clip4,.clip5,.clip6 {
+		width: 47%;
+	}
+	.clip1 {
+		left: 2%;
+	}
+	.clip2 {
+		left: 51%;
+	}
+	.clip3 {
+		left: 100%;
+	}
+	.clip4 {
+		left: 149%;
+	}
+	.clip5 {
+		left: 198%;
+	}
+	.clip6 {
+		left: 247%;
+	}
+	
+	@keyframes anime_clip_one {
+	    from {left: 2%;}
+	    to {left: -47%;}
+	}
+	@-webkit-keyframes anime_clip_one {
+	    from {left: 2%;}
+	    to {left: -47%;}
+	}
+	@keyframes anime_clip_two {
+	    from {left: 51%;}
+	    to {left: 2%;}
+	}
+	@-webkit-keyframes anime_clip_two {
+	    from {left: 51%;}
+	    to {left: 2%;}
+	}
+	@keyframes anime_clip_three {
+	    from {left: 100%;}
+	    to {left: 51%;}
+	}
+	@-webkit-keyframes anime_clip_three {
+	    from {left: 100%;}
+	    to {left: 51%;}
+	}
+	@keyframes anime_clip_foor {
+	    from {left: 149%;}
+	    to {left: 100%;}
+	}
+	@-webkit-keyframes anime_clip_foor {
+	    from {left: 149%;}
+	    to {left: 100%;}
+	}
+	@keyframes anime_clip_five {
+	    from {left: 198%;}
+	    to {left: 149%;}
+	}
+	@-webkit-keyframes anime_clip_five {
+	    from {left: 198%;}
+	    to {left: 149%;}
+	}
+	@keyframes anime_clip_six {
+	    from {left: 247%;}
+	    to {left: 198%;}
+	}
+	@-webkit-keyframes anime_clip_six {
+	    from {left: 247%;}
+	    to {left: 198%;}
 	}
 	.animation_name_head1,.animation_name_head2 {
 		animation-duration: 2s; 
 		-webkit-animation-duration: 2s;
+	}
+	.my_logo {
+		font-size: 11px;
+	}
+	p, span {
+		font-size: 13px;
+	}
+	.input_block {
+    	top: 20%;
+	}
+}
+@media only screen and (max-width: 470px) {
+	.lenta,.lenta2 {
+		height: 10px;
+	}
+	.lenta_win {
+	    height: 10px;
+	    border: 2px solid rgb(0,97,193);
+	}
+	.video_block {
+		height: 150px;
+		width: 70%;
+    	margin-left: 15%;
+	}
+	.clip1,.clip2,.clip3,.clip4,.clip5,.clip6 {
+		width: 100%;
+	}
+	.clip1 {
+		left: 0;
+	}
+	.clip2 {
+		left: 101%;
+	}
+	.clip3 {
+		left: 202%;
+	}
+	.clip4 {
+		left: 303%;
+	}
+	.clip5 {
+		left: 404%;
+	}
+	.clip6 {
+		left: 505%;
+	}
+	@keyframes anime_clip_one {
+	    from {left: 0;}
+	    to {left: -101%;}
+	}
+	@-webkit-keyframes anime_clip_one {
+	    from {left: 0;}
+	    to {left: -101%;}
+	}
+	@keyframes anime_clip_two {
+	    from {left: 101%;}
+	    to {left: 0;}
+	}
+	@-webkit-keyframes anime_clip_two {
+	    from {left: 101%;}
+	    to {left: 0;}
+	}
+	@keyframes anime_clip_three {
+	    from {left: 202%;}
+	    to {left: 101%;}
+	}
+	@-webkit-keyframes anime_clip_three {
+	    from {left: 202%;}
+	    to {left: 101%;}
+	}
+	@keyframes anime_clip_foor {
+	    from {left: 303%;}
+	    to {left: 202%;}
+	}
+	@-webkit-keyframes anime_clip_foor {
+	    from {left: 303%;}
+	    to {left: 202%;}
+	}
+	@keyframes anime_clip_five {
+	    from {left: 404%;}
+	    to {left: 303%;}
+	}
+	@-webkit-keyframes anime_clip_five {
+	    from {left: 404%;}
+	    to {left: 303%;}
+	}
+	@keyframes anime_clip_six {
+	    from {left: 505%;}
+	    to {left: 404%;}
+	}
+	@-webkit-keyframes anime_clip_six {
+	    from {left: 505%;}
+	    to {left: 404%;}
+	}
+}
+@media only screen and (max-width: 300px) {
+	.my_logo {
+		font-size: 10px;
+	}
+	p, span {
+		font-size: 12px;
+	}
+	.input_block {
+    	top: 15%;
+	}
+}
+@media only screen  and (max-width: 650px) and (max-height: 400px) {
+	.name_head div {
+    	font-size: 20px;
+	}
+	.frame {
+	    width: 40%;
+	    margin-top: 3px;
+	}
+	.my_logo {
+    	font-size: 8px;
+	}
+	.input_block {
+    	top: 15%;
+    	width: 80%;
+    	left: 10%;
+	}
+	p, span {
+    	font-size: 12px;
+   	 	font-style: italic;
+	}
+	input[id='usr'], input[id='pass'] , input[id='btn']{
+   
+    	height: 18px;
+	}
+	input[id='btn'] {
+    
+    	font-size: 10px;
+    	font-style: italic;
+	}
+	input[type='checkbox'] {
+    	height: 15px;
+	}
+	.lenta {
+		margin-top: 3px;
+	}
+	.lenta, .lenta2 {
+    	height: 15px;
+	}
+	.lenta_win {
+    	height: 15px;
+   		border: 4px solid rgb(0,97,193);
+	}
+	.video_block {
+    	height: 100px;
 	}
 }
