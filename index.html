@@ -3,18 +3,31 @@
 <head>
 	<title>Тренер онлайн</title>	
 	<link rel="stylesheet" type="text/css" href="css/start.css">
+	<link rel="stylesheet" type="text/css" href="css/landscape1000.css">
+	<link rel="stylesheet" type="text/css" href="css/landscape.css">
 	<link rel="stylesheet" type="text/css" href="css/trainer.css">
 	<link rel="stylesheet" type="text/css" href="css/chat.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	
+ 	<!--[if lte IE 9]>
+	<script>
+	(function(f){
+	window.setTimeout =f(window.setTimeout);
+	window.setInterval =f(window.setInterval);
+	})(function(f){return function(c,t){
+	var a=[].slice.call(arguments,2);return f(function(){c.apply(this,a)},t)}
+	});
+	</script>
+	<![endif]-->
 	<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
 	<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
- 
 </head>
 <body>
 	<div id="logon"></div>
 	<div id="wrap"></div>
-
+	<script type="text/javascript" src="js/polyfils.js"></script>
+	<script type="text/javascript" src="js/detect.js"></script>
 	<script type="text/javascript" src="js/adapter.js"></script>
 	<script type="text/javascript" src="js/webrtc.min.js"></script>
 	<script type="text/javascript" src="js/start.min.js"></script>
