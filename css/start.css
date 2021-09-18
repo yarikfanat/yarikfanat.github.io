@@ -5,6 +5,9 @@
 html, body {
   	background: rgb(108,108,108);
  	height: 100%;
+ 	max-width: 1920px;
+ 	max-height: 969px;
+ 	margin: 0 auto;
 }
 #logon {
 	display: block;
@@ -23,7 +26,6 @@ html, body {
 	display: flex;
 	flex-wrap: nowrap;
 	width: 100%;
-	/*height: 100%;	*/
 	flex-direction: column;
 }
 .bgstart {
@@ -46,12 +48,10 @@ html, body {
 	width: 45%;
 	text-align: right;
 	float: left;
-/*	left: -100%;*/
 }
 .name_head2 {
 	position: relative;
 	width: 45%;
-/*	left: 100%;*/
 	text-align: left;
 	float: right;
 }
@@ -205,6 +205,7 @@ html, body {
 	-webkit-animation-name: anime_clip_six; 
 	animation-name: anime_clip_six;
 }
+@media only screen and (orientation: portrait) {
 @keyframes anime_clip_one {
     from {left: 1%;}
     to {left: -19%;}
@@ -252,15 +253,19 @@ html, body {
 @-webkit-keyframes anime_clip_six {
     from {left: 101%;}
     to {left: 81%;}
+}	
 }
+
 .frame {
 	position: relative;	
 	display: block;
 	width: 35%;
-	height: auto;
-/*	margin: 200px auto;*/
 	margin: 50px auto;
 	margin-bottom: 0;
+	background-image: url(../img/my_photo680.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
     border: 2px solid blue;
 }
 .video_block {
@@ -271,7 +276,7 @@ html, body {
 	align-items: center;
 	overflow: hidden;
 	height: 180px;
-	background:  rgb(0,97,193);
+	background:  rgba(0,97,193,0.7);
 }
 .video_img {
 	position: absolute;
@@ -295,10 +300,12 @@ html, body {
 	width: 3%;
     height: 30px;
     background: transparent;
-    border: 10px solid rgb(0,97,193);
+    border: 10px solid rgba(0,97,193,0.7);
 }
+
 .clip1,.clip2,.clip3,.clip4,.clip5,.clip6 {
 	width: 18%;
+	top:0;
 }
 .clip1 {
 	left: 1%;
@@ -325,21 +332,21 @@ html, body {
 	top: 10px;
 	font-weight: bold;
 	font-family: Arial;
-	font-size: 15px;
+	font-size: 11px;
+	font-style: italic;
 }
 .my_photo {
 	width: 100%;
 	height: auto;
 }
 .input_block {
-	position: absolute;
 	width: 50%;
-	top: 35%;
-	left: 25%;
+	margin: 150px auto;
 }
 p,span {
 	color: rgb(202,202,202);
 	font-family: Arial;
+	font-style: italic;
 }
 span {
 	margin-left: 10px;
@@ -371,14 +378,57 @@ input[id='btn'] {
 	border: 1px solid rgb(0,162,232);
 	border-radius: 10px;
 	background: rgb(210,241,255); 
+	font-style: italic;
 }
+
+@media only screen and (min-width: 1850px) {
+	.input_block {
+		
+		margin: 150px auto;
+	}
+}
+
+@media only screen and (max-width: 1849px) {
+	.input_block {
+		
+		margin: 90px auto;
+	}
+	.video_block {
+		height: 170px;
+	}
+}
+@media only screen and (max-width: 1800px) {
+	.video_block {
+		height: 166px;
+	}
+}
+@media only screen and (max-width: 1750px) {
+	.video_block {
+		height: 161px;
+	}
+}
+@media only screen and (max-width: 1700px) {
+	.video_block {
+		height: 156px;
+	}
+}
+@media only screen and (max-width: 1650px) {
+	.video_block {
+		height: 153px;
+	}
+}
+@media only screen and (max-width: 1600px) {
+	.video_block {
+		height: 140px;
+	}
+}
+
 @media only screen and (max-width: 1400px) {
 	.frame {
 		width: 50%;
-/*		margin: 10% auto;*/
 	}
 	.video_block {
-		height: 150px;
+		height: 130px;
 	}
 	.name_head {
 		width: 70%;
@@ -387,18 +437,36 @@ input[id='btn'] {
 	.name_head div {
 		font-size: 30px;
 	}
+	.input_block {
+		
+		margin: 110px auto;
+	}
+}
+@media only screen and (max-width: 1300px) {
+	.video_block {
+		height: 120px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.video_block {
+		height: 110px;
+	}
 }
 @media only screen and (max-width: 1100px) {
+
 	.frame {
 		width: 70%;
 		margin-top:10px;
+	}
+	.video_block {
+		height: 130px;
 	}
 	.lenta,.lenta2 {
 		height: 25px;
 	}
 	.lenta_win {
 	    height: 25px;
-	    border: 6px solid rgb(0,97,193);
+	    border: 6px solid rgba(0,97,193,0.7);
 	}
 	.clip1,.clip2,.clip3,.clip4,.clip5,.clip6 {
 		width: 23%;
@@ -477,15 +545,25 @@ input[id='btn'] {
 		font-size: 14px;
 	}
 	.input_block {
-    	top: 25%;
+		
+		margin: 140px auto;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.video_block {
+		height: 120px;
 	}
 }
 @media only screen and (max-width: 900px) {
 	.frame {
 		width: 80%;
 	}
+	.input_block {
+		
+		margin: 150px auto;
+	}
 	.video_block {
-		height: 140px;
+		height: 150px;
 	}
 	.clip1,.clip2,.clip3,.clip4,.clip5,.clip6 {
 		width: 32%;
@@ -557,16 +635,41 @@ input[id='btn'] {
 	    to {left: 133%;}
 	}
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px){
 	.lenta,.lenta2 {
 		height: 15px;
 	}
 	.lenta_win {
 	    height: 15px;
-	    border: 4px solid rgb(0,97,193);
+	    border: 4px solid rgba(0,97,193,0.7);
+	}
+	.input_block {
+		
+		margin: 110px auto;
+	}
+	.frame {
+		background-image: url(../img/my_photo600.jpg);
+	}
+	.video_block {
+		height: 130px;
+	}
+	
+}
+@media only screen and (max-width: 700px) {
+	.input_block {
+		
+		margin: 80px auto;
+	}
+	.video_block {
+		height: 115px;
 	}
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px){
+	.video_block {
+		height: 100px;
+	}
+}
+@media only screen and (max-width: 600px){
 	.name_head div {
 		width: 48%;
 		font-size: 20px;
@@ -587,7 +690,9 @@ input[id='btn'] {
 	} 
 	.input_block {
 		width: 70%;
-		left: 15%;
+	}
+	.video_block {
+		height: 150px;
 	}
 	.clip1,.clip2,.clip3,.clip4,.clip5,.clip6 {
 		width: 47%;
@@ -673,16 +778,38 @@ input[id='btn'] {
     	top: 20%;
 	}
 }
+@media only screen and (max-width: 550px) {
+	.video_block {
+		height: 145px;
+	}
+}
+@media only screen and (max-width: 530px) {
+	.video_block {
+		height: 130px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.input_block {
+		
+		margin: 50px auto;
+	}
+	.video_block {
+		height: 120px;
+	}
+}
 @media only screen and (max-width: 470px) {
 	.lenta,.lenta2 {
 		height: 10px;
 	}
 	.lenta_win {
 	    height: 10px;
-	    border: 2px solid rgb(0,97,193);
+	    border: 2px solid rgba(0,97,193,0.7);
+	}
+	.frame {
+		background-image: url(../img/my_photo460.jpg);
 	}
 	.video_block {
-		height: 150px;
+		height: 190px;
 		width: 70%;
     	margin-left: 15%;
 	}
@@ -756,60 +883,105 @@ input[id='btn'] {
 	    to {left: 404%;}
 	}
 }
-@media only screen and (max-width: 300px) {
-	.my_logo {
-		font-size: 10px;
-	}
-	p, span {
-		font-size: 12px;
-	}
-	.input_block {
-    	top: 15%;
+@media only screen and (max-width: 450px) {
+	.video_block {
+		height: 180px;
 	}
 }
-@media only screen  and (max-width: 650px) and (max-height: 400px) {
-	.name_head div {
-    	font-size: 20px;
+@media only screen and (max-width: 430px) {
+	.video_block {
+		height: 170px;
 	}
-	.frame {
-	    width: 40%;
-	    margin-top: 3px;
+	
+}
+@media only screen and (max-width: 400px) {
+	.video_block {
+		height: 160px;
 	}
 	.my_logo {
-    	font-size: 8px;
-	}
-	.input_block {
-    	top: 15%;
-    	width: 80%;
-    	left: 10%;
+   		font-size: 9px;
 	}
 	p, span {
-    	font-size: 12px;
-   	 	font-style: italic;
+    	font-size: 11px;
+	}
+	input[type='checkbox'] {
+	    margin-top: 10px;
+	    width: 15px;
+	    height: 15px;
+	}
+	.input_block {
+    	margin-bottom: 5px;
+	}
+}
+@media only screen and (max-width: 370px) {
+	.video_block {
+		height: 150px;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.video_block {
+		height: 140px;
+	}
+}
+@media only screen and (max-width: 300px) {
+	.my_logo {
+		font-size: 9px;
+	}
+	p, span {
+		font-size: 11px;
+	}
+	.frame {
+		background-image: url(../img/my_photo300.jpg);
+	}
+	.video_block {
+		height: 120px;
+	}
+}
+
+@media only screen and (max-width: 370px) {
+	.input_block {
+		
+		margin: 40px auto;
+	}
+}
+@media only screen and (max-width: 330px) {
+	.input_block {
+		
+		margin: 30px auto;
+	}
+}
+@media only screen and (max-width: 300px) {
+	.input_block {
+   	 	margin: 15px auto;
+   		margin-bottom: 2px;
+	}
+	.my_logo {
+		top: 2px;
 	}
 	input[id='usr'], input[id='pass'] , input[id='btn']{
    
     	height: 18px;
 	}
 	input[id='btn'] {
-    
-    	font-size: 10px;
-    	font-style: italic;
-	}
-	input[type='checkbox'] {
-    	height: 15px;
-	}
-	.lenta {
-		margin-top: 3px;
-	}
-	.lenta, .lenta2 {
-    	height: 15px;
-	}
-	.lenta_win {
-    	height: 15px;
-   		border: 4px solid rgb(0,97,193);
-	}
-	.video_block {
-    	height: 100px;
+		font-size: 10px;
 	}
 }
+@media only screen and (max-width: 270px) {
+	.my_logo {
+    	font-size: 8px;
+	}
+	p, span {
+   		font-size: 9px;
+	}
+	input[id='btn'] {
+		width: 70%;
+	}
+	input[type='checkbox'] {
+	    margin-top: 10px;
+	    width: 15px;
+	    height: 15px;
+	}
+}
+
+
+
