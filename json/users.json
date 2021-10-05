@@ -1,6 +1,6 @@
 {
-	"usr_name":["yarikfanat","dasha","grynyshyn","sveta","arkadiy","olga","anastasia","anastasia1","ivan"],
-	"usr_pass":["leppard0872","andrejko","stone","andrejko","garda36","prokopova","zimaroeva","storozhuk","krikun"],
+	"usr_name":["yarikfanat","dasha","grynyshyn","sveta","arkadiy","olga","anastasia","anastasia1","ivan","vitaly"],
+	"usr_pass":["leppard0872","andrejko","stone","andrejko","garda36","prokopova","zimaroeva","storozhuk","krikun","honey"],
 	"usr_conf":["json/trainer.json","json/dasha_andrejko.json","json/yar_grynyshyn.json","json/sveta_andrejko.json","json/garda.json","json/olga_prokopova.json","json/anastasia_zimaroeva.json",
-	            "json/anastasia_storozhuk.json","json/ivan_krikun.json"]
+	            "json/anastasia_storozhuk.json","json/ivan_krikun.json","json/vitaly.json"]
 }
