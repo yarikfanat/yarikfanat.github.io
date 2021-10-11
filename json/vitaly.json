@@ -1,39 +1,35 @@
 {
-	"photo_equip":[
-				   ["photo_equip/hands/IMG_20201030_162503.jpg","photo_equip/hands/IMG_20201028_085252.jpg"],
-				   ["photo_equip/hands/frzhstez-sitdown.jpg","photo_equip/hands/triceps__one_hand_izza_golovi.jpg"],
-				   ["photo_equip/hands/IMG_20201030_162304.jpg","photo_equip/hands/triceps_v_naklone.jpg"],
-				   ["photo_equip/hands/triceps_one_hand_v_bloke.jpg","photo_equip/hands/Obratnyie-razgibaniya-ruk-na-bloke-tehnika-vyipolneniya.jpg"],
-				   ["photo_equip/hands/biceps_podem_stanga.jpg","photo_equip/hands/podtygivania_biceps.jpg"],
-				   ["photo_equip/hands/podem-gantel_bicep_sidya.jpg","photo_equip/hands/biceps_gantel_skot_one_hand.png"],
-				   ["photo_equip/abdominal/press_turnik.jpg","photo_equip/abdominal/IMG_20201028_085135.jpg","photo_equip/abdominal/press_na_skame.jpg"]
+	"src_video":[
+				   ["https://www.youtube.com/embed/hXyC9CGfvo4","https://www.youtube.com/embed/xv7gMobOzmU"],
+				   ["https://www.youtube.com/embed/vSMi1CEgweo","https://www.youtube.com/embed/poXUp3EF1Dw"],
+				   ["https://www.youtube.com/embed/wiFDIIe1Z1M","https://www.youtube.com/embed/vNrkKOiksCs"],
+				   ["https://www.youtube.com/embed/rUz7mPfvi48","https://www.youtube.com/embed/y6Y8WM_K8YY"],
+				   ["https://www.youtube.com/embed/wVNFyUNcwgU","https://www.youtube.com/embed/F2BZDFZEIQQ"],
+				   ["https://www.youtube.com/embed/BpBY08RLioM","https://www.youtube.com/embed/0NrOMts6pzc"]
 				  ],
 	"exercise_name":[
-					 ["Жим на трицепс в машине Хаммер(локти прижаты).Вес (по 25кг-55 фунтов с каждой стороны)","Отжимания на трицепс в гравитроне,локти прижаты.Противовес 150 фунтов"],
-					 ["Французкий жим сидя - изогнутый гриф (монолитная штанга 50-60 фунтов)","Разгибание на трицепс гантели одной рукой из-за головы(10-12 кг)"],
-					 ["Разгибания на трицепс в трицепс-машине","Разгибание на трицепс гантели в наклоне"],
-					 ["Разгибания на трицепс в блоке одной рукой","Разгибания на трицепс в блоке - обратный хват"],
-					 ["Подьем штанги на бицепс стоя","Подтягивания в гравитроне обратным хватом на бицепс. Противовес 150 фунтов"],
-					 ["Подьем гантелей 8кг на бицепс сидя - с супинацией ","Изолированный подьем гантели 8кг на бицепс одной рукой в скамье Скотта"],
-					 ["Подьемы ног в висе","Скручивания в тренажере для пресса","Подьемы ног лежа на спине"]
+					 ["Разгибание бедра сидя(вес 70-80 фунтов)","Жим ногами в горизонтальной платформе (широкая постановка ног)(общий вес 150-170 фунтов)"],
+					 ["Приседание до параллели со штангой на плечах (по 20кг или 45 фунтов) с каждой стороны","Приседания со штангой в станке Смитта(45-55 фунтов с каждой стороны)"],
+					 ["Жим ногами вверх в платформе (узкая постановка ног)вес-40кг или 90фунтов с каждой стороны","Выпады с гантелями по 12 кг(25фунтов) на месте"],
+					 ["Сгибатель бедра лежа на животе(120-130 фунтов)","Сгибатель бедра сидя (120 фунтов)"],
+					 ["Сведения ног в тренажере(100 фунтов)","Отведения ног в тренажере(90 фунтов)"],
+					 ["Подьемы на носки в тренажере(40 фунтов)","Подьем ног лежа на спине"]
 				  	],
-	"src_video":[
-				 ["https://www.youtube.com/embed/gPE0-KLc5zQ","https://www.youtube.com/embed/pSlfgn0nW4w"],
-				 ["https://www.youtube.com/embed/g9qNFl3yq9s","https://www.youtube.com/embed/YClQH0n_WZw"],
-				 ["https://www.youtube.com/embed/ZcVPqGfS5iE","https://www.youtube.com/embed/m8oM7C09BmI"],
-				 ["https://www.youtube.com/embed/7z0c2UIPY54","https://www.youtube.com/embed/LzNslDsoIcs"],
-				 ["https://www.youtube.com/embed/ztrd2rCc1hA","https://www.youtube.com/embed/ufmuhq82gLM"],
-				 ["https://www.youtube.com/embed/Kkp0anSdkPY","https://www.youtube.com/embed/V61gI5P5_3w"],
-				 ["https://www.youtube.com/embed/MLRvcj4dYeQ","https://www.youtube.com/embed/4wNi4keR_JE","https://www.youtube.com/embed/0NrOMts6pzc"]
+	"photo_equip":[
+				 ["photo_equip/legs/IMG_20201028_084549.jpg","photo_equip/legs/IMG_20201026_174911.jpg"],
+				 ["photo_equip/legs/prisedaniya-so-shtangoy.jpg","photo_equip/legs/prised_smit.jpg"],
+				 ["photo_equip/legs/zhim-nogami-foto.jpg","photo_equip/legs/vipad.jpg"],
+				 ["photo_equip/legs/biceps_bedra_lezha.jpg","photo_equip/legs/IMG_20201028_084538.jpg"],
+				 ["photo_equip/legs/svedenie-nog-v-trenazhere_4.jpg","photo_equip/legs/IMG_20201028_084354.jpg"],
+				 ["photo_equip/legs/golen-mashin.jpg","photo_equip/abdominal/press_na_skame.jpg"]
 				],
-	"superset":[false,false,false,false,false,false,false],
+	"superset":[false,false,false,false,true,true],
 	"circle":[false,false,false,false,false,false,false],
 	"details":[[{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
 			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
-			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
-			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15}],
-			   [{"rounds":4,"reps":15},{"rounds":4,"reps":15},{"rounds":4,"reps":15}]
+			   [{"rounds":4,"reps":25},{"rounds":4,"reps":25}],
+			   [{"rounds":4,"reps":20},{"rounds":4,"reps":20}]
 		 	  ]
 }
